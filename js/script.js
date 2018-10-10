@@ -1,4 +1,4 @@
-
+/*
 //Mouse position global values
 var xpos;
 var ypos;
@@ -51,7 +51,7 @@ canvas.addEventListener("click", function(){
 	//Draw circle at position
 	/*ctx.beginPath();
 	ctx.arc(xpos, ypos, 40, 0, 2 * Math.PI);
-	ctx.stroke();*/
+	ctx.stroke();
 });
 
 
@@ -72,7 +72,7 @@ function animate(){
 		} else {
 			ctx.strokeStyle = '#999';
 		}
-	}*/
+	}
 	
     if(frameCount){requestAnimationFrame(animate);}
 	//ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -90,3 +90,5 @@ function animate(){
 
 frameCount = 1;
 animate();
+
+*/
