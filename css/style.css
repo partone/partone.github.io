@@ -6,16 +6,6 @@ body, html, canvas {
 	overflow: hidden;
 }
 
-/*canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #feffef;
-	animation-name: sky;
-	animation-iteration-count: infinite;
-    animation-duration: 4s;
-}*/
-
 /*Back banner*/
 
 #backBanner {
