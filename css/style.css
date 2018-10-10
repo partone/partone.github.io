@@ -66,9 +66,6 @@ header .imgBox {
 	z-index: -1;
 }
 
-.name {
-	font-size: 100%;
-}
 
 .horns {
 	height: 80vh;
@@ -95,8 +92,23 @@ nav a {
 
 /*Mobile*/
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
+@media only screen and (max-width: 1000px) {
+	#circle {
+		height: 70vw;
+		width: 70vw;
+		border-radius: 5vw;
+		z-index: -1;
+	}
+
+	.horns {
+		height: 60vw;
+	}
+
+	header .title {
+		padding-top: 100px;
+	}
+
+	header {
+		font-size: 60px;
+	}
 }
