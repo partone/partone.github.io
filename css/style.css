@@ -6,117 +6,82 @@ body, html, canvas {
 	overflow: hidden;
 }
 
-canvas {
+/*canvas {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #c0d7ed;
+	background-color: #feffef;
 	animation-name: sky;
 	animation-iteration-count: infinite;
     animation-duration: 4s;
-    
-	/*background: linear-gradient(black 75%, #E9190F);*/
-
-}
+}*/
 
 /*Back banner*/
 
 #backBanner {
-	width: 40%;
-	background-color: #f4f0c6;
+	width: 100%;
+	background-color: #222;
 	height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
 	left: 0;
 	right: 0;
+	z-index: -2;
+}
+
+/*Circle*/
+
+#circle {
+	height: 90vh;
+	width: 90vh;
+	margin-top: 5vh;
+	background-color:  #feffef;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 45vh;
+	z-index: -1;
 }
 
 /*Header*/
 
 header {
-	font-family: 'Permanent Marker', cursive;
-	font-family: 'Cinzel Decorative', cursive;
-	font-family: 'Reenie Beanie', cursive;
-	font-family: 'Bungee Inline', cursive;
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
 	text-align: center;
 	font-size: 65px;
 	width: 100%;
-	color: #333;
-	padding-top: 20px;
-	position: absolute;
-	top: 30px;
+	color: #222;
 	cursor: default;
-}
-
-.headerSpace {
-	margin-left: 30px;
-}
-
-/*Sun*/
-
-#sunBox {
-	height: 300px;
-	width: 300px;
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
 	position: relative;
 }
 
-#sun {
-	height: 100%;
-	width: 100%;
-	border-radius: 150px;
-    background: linear-gradient(#EB6534, #AD5D4E);
+header .title {
+	padding-top: 30vh;
+	z-index: 999;
 }
 
-.bar {
+header .imgBox {
 	position: absolute;
-	width: 100%;
-	background-color: #f4f0c6;
-	/*animation-name: sky;
-	animation-iteration-count: infinite;
-    animation-duration: 4s;*/
-}
-/*
-#bar1 {
-	height: 5px;
-	top: 120px;
-}
-*/
-#bar2 {
-	height: 30px;
-	top: 280px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	z-index: -1;
 }
 
-#bar3 {
-	height: 25px;
-	top: 245px;
+.name {
+	font-size: 100%;
 }
 
-#bar4 {
-	height: 10px;
-	top: 145px;
-}
-
-#bar5 {
-	height: 20px;
-	top: 175px;
-}
-
-#bar6 {
-	height: 20px;
-	top: 210px;
-}
-
-@keyframes sky {
-    0%   {background-color:#c0d7ed;}
-    20%  {background-color:#b6d1ea;}
-    40%  {background-color:#c3cfdb;}
-    60%  {background-color:#b3c5d6;}
-    80%  {background-color:#a2caf2;}
-    100% {background-color:#c0d7ed;}
+.horns {
+	height: 80vh;
 }
 
 /*Menu*/
@@ -136,4 +101,12 @@ nav a {
 	width: 100%;
 	margin-top: 10px;
 	font-size: 20px;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
 }
