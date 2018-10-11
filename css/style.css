@@ -14,13 +14,21 @@ body, html, canvas {
 	height: 90vh;
 	width: 90vh;
 	margin-top: 5vh;
-	background-color:  #feffef;
+	background-color: #feffef;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 45vh;
+	box-shadow: 0px 0px 80px 10px #BB2222;
+	animation: blink 2.0s linear infinite;
+}
+
+@keyframes blink {
+    0% { box-shadow: 0 0 60px  #BB2222; }
+    50% { box-shadow: 0 0 20px  #BB2222; }
+    100% { box-shadow: 0 0 60px  #BB2222; }
 }
 
 /*Header*/
