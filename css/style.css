@@ -106,5 +106,6 @@ header .imgBox {
 
 	header {
 		font-size: 120px;
+		width: 70vh;
 	}
 }
