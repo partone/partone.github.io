@@ -111,11 +111,12 @@ header .imgBox {
 	}
 
 	header .title {
-		padding-top: 100px;
+		padding-top: 200px;
 	}
 
 	header {
 		font-size: 120px;
-		width: 70vh;
+		width: auto;
+		/*width: 70vh;*/
 	}
 }
