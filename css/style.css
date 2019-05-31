@@ -43,7 +43,7 @@ header {
 	cursor: default;
 	position: relative;
 	margin-left: auto;
-	margin-right: auto;	
+	margin-right: auto;
 }
 
 header .title {
@@ -74,6 +74,7 @@ header .imgBox {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
+	margin-top: 20px;
 }
 
 .subtitle a {
@@ -87,6 +88,7 @@ header .imgBox {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
+	width: 120px;
 }
 
 .subtitle a:hover {
