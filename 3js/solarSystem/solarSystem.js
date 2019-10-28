@@ -9,11 +9,11 @@ root = null,
 group = null,
 sphere = null,
 sphereTextured = null;
-asteroidsGroup = null;
+//asteroidsGroup = null;
 
 //Space object global declaration
 var spaceObjects = [];
-var asteroid;
+//var asteroid;
 
 var duration = 10000; // ms
 var currentTime = Date.now();
@@ -72,7 +72,7 @@ function animate()
     }
 
     //Asteroid rotation
-    asteroidsGroup.rotateY(-.01);
+    //asteroidsGroup.rotateY(-.01);
 }
 
 function run()
@@ -237,6 +237,11 @@ function toggleTexture()
     }
 }
 
+//Hide the UI
+function hideUI() {
+  $('#clarifications').hide();
+}
+
 function createScene(canvas) {
 
     // Create the Three.js renderer and attach it to our canvas
@@ -251,7 +256,7 @@ function createScene(canvas) {
     scene.background = new THREE.Color( 0, 0, 0 );
 
     // Add  a camera so we can view the scene
-    camera = new THREE.PerspectiveCamera( 45, canvas.width / canvas.height, 1, 400 );
+    camera = new THREE.PerspectiveCamera( 45, canvas.width / canvas.height, .1, 400 );
     camera.position.z = 10;
     var controls = new THREE.OrbitControls( camera, renderer.domElement );
     controls.update();
@@ -379,7 +384,7 @@ function createScene(canvas) {
 
     //Asteroid belt
 
-
+/*
     var loader = new THREE.OBJLoader();
     // load a resource
     loader.load(
@@ -420,7 +425,7 @@ function createScene(canvas) {
     	function ( error ) {
     		console.log( 'An error happened' );
     	}
-    );
+    );*/
 
     //Any object not in this array won't spin
     spaceObjects = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto, moon, deimos, phobos, ganymede, callisto, io, europa, titania, oberon, umbriel, ariel, triton, charon];

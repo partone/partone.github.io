@@ -18,8 +18,12 @@
   <script type="text/javascript">
     $(document).ready(
   			function() {
-
   				var canvas = document.getElementById("webglcanvas");
+
+          //Resize the canvas image
+          $('#webglcanvas').attr("width",$(window).width());
+          $('#webglcanvas').attr("height",$(window).height());
+
 
   				// create the scene
   				createScene(canvas);
@@ -33,24 +37,58 @@
   	);
 
   </script>
+
+  <style>
+  * { margin: 0; padding: 0;}
+
+  body, html {
+  	height:100%;
+  	width:100%;
+   }
+  /*Make the canvas full screen*/
+  #webglcanvas, #container {
+      position:absolute;
+      width:100% !important;
+      height:100% !important;
+  }
+
+  #clarifications {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEE;
+    opacity: .9;
+    padding: 100px;
+  }
+
+  #clarifications button {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  </style>
 </head>
 <body style="font-family:'Trebuchet MS', Helvetica, sans-serif">
-  <canvas id="webglcanvas" width=1000 height=600></canvas>
-  <h1 style="margin-left:20px">Some clarifications</h1>
-  <ul>
-    <li>The sizes of the planets are proportional to each other</li>
-    <li>The orbital speeds and rotational speeds of the planets are proportional to each other</li>
-    <li>The orbital speeds and rotational speeds are not on the same scale (1 earth orbit != 365 earth rotations)</li>
-    <li>The sun's size is proportional to nothing, it's just bigger than everything else</li>
-    <li>Distances from the sun are abritrary</li>
-    <li>Uranus and Venus rotate on their axis clockwise, unlike the other planets</li>
-    <li>For the sake of visibility, Mars' moons are larger than they should be</li>
-    <li>The moon's orbit speeds are proportional to each other but to nothing else</li>
-    <li>Jupiter, <strike>your-anus</strike> Uranus, Neptune, and Pluto have a few of moons each, only big moons (d > 1000km) are included here though</li>
-    <li>If your screen is really dusty, it looks like there are stars too</li>
-    <li>The speed of rotation of the moons on their own axis is arbitrary, the orbital rotation speed is proportional though</li>
-    <li>The asteroid belt is pretty much all made up</li>
-    <div><br><br>Eric Parton</div>
-  </ul>
+  <canvas id="webglcanvas" style="width=100vw; height=60vh"></canvas>
+  <div id="clarifications">
+    <h1>Some clarifications</h1>
+    <ul>
+      <li>This is designed for use on a PC</li>
+      <li>You can use the arrow keys, mouse wheel, left button drag, and right button drag to explore the solar system</li>
+      <li>The sizes of the planets are proportional to each other</li>
+      <li>The orbital speeds and rotational speeds of the planets are proportional to each other</li>
+      <li>The orbital speeds and rotational speeds are not on the same scale (1 earth orbit != 365 earth rotations)</li>
+      <li>The sun's size is proportional to nothing, it's just bigger than everything else</li>
+      <li>Distances from the sun are abritrary</li>
+      <li>Uranus and Venus rotate on their axis clockwise, unlike the other planets</li>
+      <li>For the sake of visibility, Mars' moons are larger than they should be</li>
+      <li>The moon's orbit speeds are proportional to each other but to nothing else</li>
+      <li>Jupiter, <strike>your-anus</strike> Uranus, Neptune, and Pluto have a few of moons each, only big moons (d > 1000km) are included here though</li>
+      <li>If your screen is really dusty, it looks like there are stars too</li>
+      <li>The speed of rotation of the moons on their own axis is arbitrary, the orbital rotation speed is proportional though</li>
+      <li>Pluto is out there somewhere</li>
+    </ul>
+    <button onclick="hideUI()">Understood!</button>
+  </div>
 </body>
 </html>
