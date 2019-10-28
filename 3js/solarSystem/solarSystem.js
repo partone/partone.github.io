@@ -90,7 +90,7 @@ function createMaterials()
 {
   //A whole bunch of these from https://planet-texture-maps.fandom.com
   //Sun
-  sunMap = new THREE.TextureLoader().load("../images/sunMap.jpg");
+  sunMap = new THREE.TextureLoader().load("../images/sunmap.jpg");
   materials["sun"] = new THREE.MeshBasicMaterial({ map: sunMap});
 
   //Mercury
