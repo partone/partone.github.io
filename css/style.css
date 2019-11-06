@@ -70,9 +70,16 @@ header .imgBox {
 }
 
 /*Menu*/
+.subtitles {
+	display: flex;
+	flex-wrap:wrap;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .subtitle {
-	width: auto;
+	width: 50%;
 	height: 40px;
 	display: flex;
 	flex-wrap: wrap;
@@ -92,6 +99,7 @@ header .imgBox {
 	margin-right: auto;
 	padding: 5px;
 	width: 120px;
+	font-family: 'Nunito', sans-serif;
 }
 
 .subtitle a:hover {
