@@ -126,12 +126,16 @@ footer {
 		border-radius: 5vw;
 	}
 
+	#surname {
+		margin-top: -60px;
+	}
+
 	.horns {
 		height: 60vw;
 	}
 
 	header .title {
-		padding-top: 200px;
+		padding-top: 100px;
 	}
 
 	header {
@@ -141,14 +145,14 @@ footer {
 	}
 
 	.subtitle {
-		height: 80px;
+		height: 55px;
 		width: 70vw;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.subtitle a {
-		width: 80%;
-		font-size: 42px;
+		width: 70%;
+		font-size: 30px;
 	}
 }

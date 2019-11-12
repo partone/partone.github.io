@@ -1,0 +1,78 @@
+#projectsTitle {
+  color: #feffef;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#projectsContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectBoxArea {
+  width: 21%;
+  padding: 2%;
+  height: 20vw;
+  border-radius: 10%;
+}
+
+.projectBox {
+  background-color: white;
+  height: 100%;
+  border-radius: 5%;
+  position: relative;
+  top: -100%;
+  left: 0;
+  opacity: 0.0;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  box-shadow: 0px 0px 5px 1px #feffef;
+}
+
+.projectBox:hover {
+  opacity: 0.9;
+}
+
+.projectBoxTitle {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding-top: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 700;
+}
+
+.projectBoxDescription {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.projectBoxBG {
+  width: 100%;
+  height: 100%;
+
+  background-color: green;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.projectBoxBG img {
+  height: 100%;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 1000px) {
+  .projectBoxArea {
+    width: 46%;
+    padding: 2%;
+    height: 40vw;
+    border-radius: 10%;
+  }
+}
