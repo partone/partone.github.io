@@ -198,10 +198,7 @@ function animate() {
           }
           $('#score').text(score);
           $('#health').text(health);
-          if(health <= 0) {
-            $('#scoreFinal').text("Score: " + score);
-            $("#gameover").show();
-          }
+
 
           //Reset some crap
           //Make X or Y randomly negative for robot distribution
@@ -326,8 +323,14 @@ function createScene(canvas) {
     // Now add the group to our scene
     scene.add( root );
     setInterval(function() {
-      health--;
+      if(game) {
+        health--;
+      }
       $("#health").text(health);
+      if(health <= 0) {
+        $('#scoreFinal').text("Score: " + score);
+        $("#gameover").show();
+      }
     }, 1000);
 
 }

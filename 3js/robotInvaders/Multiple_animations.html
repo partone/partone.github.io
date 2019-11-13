@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Robot Invaders</title>
+<title>Communist Robo-invaders</title>
 
 <link rel="stylesheet" href="../libs/jquery-ui/jquery-ui.css" />
 <link rel="stylesheet" href="../libs/colorpicker/css/colorpicker.css" />
@@ -73,15 +73,15 @@ function initControls()
     <canvas id="webglcanvas" width=800 height=600></canvas>
 </div>
 
-<div id="animations" style = "background-color:white; padding:10px; color:#333; position:absolute;left:0;top:0;display:flex;flex-wrap:wrap;">
+<div id="animations" style="background-color:white; padding:10px; color:#333; position:absolute;left:0;top:0;display:flex;flex-wrap:wrap;">
 	<div style="width:50%;">Timer:</div><div style="width:50%;" id="health">0</div>
   <div style="width:50%;">Score:</div><div style="width:50%;" id="score">0</div>
 </div>
 
-<div id="gameover" onClick="window.location.reload();" style="display:none;font-weight:bold;position:fixed;left:0;width:100%;height:100vh;cursor:pointer;text-align:center;top:0;background-color:black;padding:60px;">
-  <div style="font-size:105px;">GAME OVER</div>
+<div id="gameover" style="display:none;color:white;font-weight:bold;position:fixed;left:0;width:100%;height:100vh;text-align:center;top:0;background-color:black;padding:60px;">
+  <div style="font-size:105px;cursor:default">GAME OVER</div>
   <div id="scoreFinal"></div>
-  <div>Play again?</div>
+  <div onClick="window.location.reload();" style="cursor:pointer;">Play again?</div>
 </div>
 
   <iframe src="../audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
