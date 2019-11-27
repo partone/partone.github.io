@@ -1,3 +1,7 @@
+body, html, canvas {
+	overflow: visible;
+}
+
 #projectsTitle {
   color: #feffef;
   margin-top: 20px;
