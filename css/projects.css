@@ -70,7 +70,7 @@ body, html, canvas {
   height: 100%;
 }
 
-/*Mobile*/
+/*Mobile large*/
 
 @media only screen and (max-width: 1000px) {
   .projectBoxArea {
@@ -82,9 +82,44 @@ body, html, canvas {
 
   .projectBox {
     opacity: .9;
+		box-shadow: none;
   }
 
+	.projectsTitle {
+
+
+	}
+
   #projectsTitle {
-    font-size: 70px;
+    font-size: 45px;
   }
+}
+
+/*Mobile small*/
+
+@media only screen and (max-width: 700px) {
+	.projectBoxTitle {
+		padding-top: 10px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.projectBoxDescription {
+		padding-top: 0px;
+		font-size: 12px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+/*Mobile Tiny*/
+
+@media only screen and (max-width: 360px) {
+	.projectBoxTitle {
+		font-size: 18px
+	}
+
+	.projectBoxDescription {
+		display: none;
+	}
 }
