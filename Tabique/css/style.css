@@ -5,6 +5,7 @@ Tabique gold: #d1a054
 Tabique black: #040707
 Light grey: #393E41
 Dark grey: #2b2e28
+Wheat: #D6DBB2
 */
 
 * {
@@ -16,6 +17,10 @@ body, html {
   padding: 0;
   width: 100%;
   background-color: #040707;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
 }
 
 .fullVHSection {
@@ -36,7 +41,7 @@ header, #headerBG {
   display: flex;
   flex-wrap: wrap;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   padding: 10px 0px;
   background-color: transparent;
   z-index: 99;
@@ -45,6 +50,7 @@ header, #headerBG {
 #headerBG {
   background-color: #2b2e28;
   opacity: .7;
+  transition: all 0.5s ease;
 }
 
 #headerLogo {
@@ -95,4 +101,78 @@ header, #headerBG {
   margin-top: 14px;
   cursor: pointer;
   margin-right: 20px;
+}
+
+/* Mobile stuff */
+
+#headerHamburger, #hamburgerMenu {
+  display: none;
+}
+
+.headerBGDark {
+  background-color: #111310 !important;
+  opacity: 1 !important;
+  position: fixed;
+}
+
+@media only screen and (max-width: 1000px) {
+  #headerBar, #headerSocialMedia {
+    display: none;
+  }
+
+  #headerHamburger {
+    display: block;
+    font-size: 9px;
+    margin-top: 9px;
+  }
+
+  #hamburgerMenu {
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 4px 6px 0px rgb(0,0,0,.8);
+    z-index: 99;
+  }
+
+  #headerHamburgerContainer {
+    margin-left: 52.5%;
+    width: 10%;
+    height: inherit;
+  }
+
+  #hamburgerMenu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  .hamburgerElement {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: #111310;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #hamburgerMenu .hamburgerElement:nth-child(even){
+    /*background-color: #2b2e28;*/
+  }
+
+  .hamburgerElement a {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .hamburgerElementSelected a {
+    color: #d1a054;
+  }
+
+  #socialMediaHam img {
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

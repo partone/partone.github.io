@@ -88,10 +88,14 @@ body {
   background-image: url("../images/metalWall.jpg");
 }
 
+#metalWallBG, #metalWallBG2 {
+  display: none;
+}
+
 /********Nosotros**********/
 
 #contentNosotros {
-  background-color: #ffeccc;
+  background-color: #D6DBB2;
   color: #393E41;
   z-index: 1;
   padding-top: 70px;
@@ -201,3 +205,49 @@ body {
 }
 
 /********Contacto**********/
+
+
+/********Mobile***********/
+
+@media only screen and (max-width: 1000px) {
+  .contentWide {
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+  }
+
+  .contentDescription {
+    text-align: center;
+  }
+
+  #bba2, #bba3 {
+    display: none;
+  }
+
+  .bigButtonBoxText {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .bigButtonArrowGlyph {
+    font-size: 110px;
+  }
+
+  .bigButton {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #contentProyectos {
+    min-height: 0px;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  #contentProyectosHeader {
+    margin-top: 60px;
+  }
+}

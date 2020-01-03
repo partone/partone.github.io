@@ -1,6 +1,12 @@
+//Fade in background images on load
+$("#metalWallBG").bind("load", function () { $(this).fadeIn(1000)});
+$("#metalWallBG2").bind("load", function () { $(this).fadeIn(1000)});
+
 //Fade in logo
 $( document ).ready(function() {
     $('#contentLandingLogo').fadeIn(1000);
+    $("#metalWallBG").fadeIn(1000);
+    $("#metalWallBG2").fadeIn(1000);
 
     //Logo click
     $("#headerLogo").click(function() {
@@ -39,8 +45,6 @@ $( document ).ready(function() {
     //Select header options depending on scroll position
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        console.log($("#contentNosotros").offset().top + ($("#contentProyectos").height() / 2));
-        console.log(scroll)
         if (scroll < $("#contentLanding").height() / 2) {
           removeSelectedClasses();
           $("#inicioButton").addClass("headerBarElementSelected");
@@ -60,8 +64,6 @@ $( document ).ready(function() {
 
     //Initial header check
     var scroll = $(window).scrollTop();
-    console.log($("#contentNosotros").offset().top + ($("#contentProyectos").height() / 2));
-    console.log(scroll)
     if (scroll < $("#contentLanding").height() / 2) {
       removeSelectedClasses();
       $("#inicioButton").addClass("headerBarElementSelected");
