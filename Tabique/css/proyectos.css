@@ -2,26 +2,32 @@ html, body {
   background-color: white;
 }
 
-/*Header changes*/
-
-#headerBG {
-  background-color: #2b2e28;
-  opacity: 1;
-}
-
 /*Header*/
-
+/*
 #proyectoHeader {
-  padding-top: 90px;
+  padding-top: 0px;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   text-transform: uppercase;
-  background-color: #2b2e28;
+  background-color: #ffeccc;
+  width: 100%;
 }
 
 #proyectoHeader div {
   font-size: 50px;
-  color: white;
+  color: #2b2e28;
+}*/
+
+#proyectoHeader {
+  width: 100%;
+  text-align: center;
+  color: #2b2e28;
+  background-color: #ffeccc;
+  padding-bottom: 30px;
+}
+
+#proyectoHeader div {
+  font-size: 24px;
 }
 
 .proyectoBG {
@@ -37,7 +43,7 @@ html, body {
 }
 
 #proyectoHeader #ph2 {
-  font-weight: 800;
+  font-weight: 300;
 }
 
 /*Projects*/
@@ -45,6 +51,7 @@ html, body {
 #proyectoContainer {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .proyectoBox {

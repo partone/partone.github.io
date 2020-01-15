@@ -5,7 +5,7 @@ Tabique gold: #d1a054
 Tabique black: #040707
 Light grey: #393E41
 Dark grey: #2b2e28
-Wheat: #D6DBB2
+Light gold: #ffeccc
 */
 
 * {
@@ -101,6 +101,20 @@ header, #headerBG {
   margin-top: 14px;
   cursor: pointer;
   margin-right: 20px;
+}
+
+/********Footer************/
+
+footer {
+  height: 100px;
+  background-color: #040302;
+  width: 100%;
+}
+
+footer img {
+  height: inherit;
+  display:block;
+  margin:auto;
 }
 
 /* Mobile stuff */

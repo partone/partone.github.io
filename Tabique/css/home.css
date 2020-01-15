@@ -53,7 +53,7 @@ body {
 
 /********Landing**********/
 
-#contentLanding {
+/*#contentLanding {
   position: relative;
 }
 
@@ -69,7 +69,7 @@ body {
   right: 0;
   margin: auto;
   display: none;
-}
+}*/
 
 #backgroundFade {
   opacity: .1;
@@ -92,10 +92,38 @@ body {
   display: none;
 }
 
+#contentLanding {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contentLanding #left {
+  width: 38%;
+  background-color: red;
+  overflow: hidden;
+}
+
+#contentLanding #right {
+  width: 62%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.backgroundImageWide img {
+  width: 100%;
+}
+
+.backgroundImageTall img {
+  height: 100vh;
+  opacity: .6
+}
+
 /********Nosotros**********/
 
 #contentNosotros {
-  background-color: #D6DBB2;
+  background-color: #ffeccc;
   color: #393E41;
   z-index: 1;
   padding-top: 70px;
@@ -112,7 +140,10 @@ body {
 }
 
 /********Proyectos**********/
-
+#contentProyectos {
+  width: 100%;
+}
+/*
 #contentProyectos {
   z-index: 1;
   position: relative;
@@ -129,7 +160,7 @@ body {
 
 #contentProyectos .contentHeaderSpaced {
   color: white;
-}
+}*/
 
 #metalWallBG2 {
   position: absolute;
@@ -207,6 +238,8 @@ body {
 /********Contacto**********/
 
 
+
+
 /********Mobile***********/
 
 @media only screen and (max-width: 1000px) {
@@ -240,7 +273,7 @@ body {
     padding-left: 5%;
     padding-right: 5%;
   }
-
+/*
   #contentProyectos {
     min-height: 0px;
     height: auto;
@@ -249,5 +282,5 @@ body {
 
   #contentProyectosHeader {
     margin-top: 60px;
-  }
+  }*/
 }
