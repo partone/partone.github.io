@@ -55,6 +55,7 @@ body {
 
 #contentLandingMobile {
   position: relative;
+  display: none;
 }
 
 #contentLandingMobile img {
@@ -68,7 +69,6 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  display: none;
 }
 
 #backgroundFade {

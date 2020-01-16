@@ -4,9 +4,9 @@ $("#metalWallBG2").bind("load", function () { $(this).fadeIn(1000)});
 
 //Fade in logo
 $( document ).ready(function() {
-    $('#contentLandingLogo').fadeIn(1000);
-    $("#metalWallBG").fadeIn(1000);
-    $("#metalWallBG2").fadeIn(1000);
+    //$('#contentLandingLogo').fadeIn(1000);
+    //$("#metalWallBG").fadeIn(1000);
+    //$("#metalWallBG2").fadeIn(1000);
 
     //Logo click
     $("#headerLogo").click(function() {
