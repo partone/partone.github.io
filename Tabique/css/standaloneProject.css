@@ -1,6 +1,6 @@
 
 body {
-  background-color: #D6DBB2;
+  background-color: #ffeccc;
   color: #393E41;
   min-height: 100vh;
   padding-top: 110px;
@@ -63,6 +63,10 @@ p {
   text-transform: uppercase;
 }
 
+.centre {
+  text-align: center;
+}
+
 .thin {
   font-weight: 300;
 }
@@ -79,6 +83,19 @@ p {
   height: 100%;
 }
 
+.buzzwords {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.imageMap {
+  height: 70%;
+  margin-top: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .containsImage {
   overflow: hidden;
 }
@@ -87,6 +104,12 @@ p {
   overflow: hidden;
   position: relative;
   height: 400px;
+}
+
+.techDescription {
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 40px;
 }
 
 #map {
@@ -137,21 +160,16 @@ p {
 }
 
 #galleryContainer {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 100px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .galleryImage {
-  width: 33.3333%;
+  width: 25%;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .galleryImageContainer img {
@@ -168,12 +186,115 @@ p {
 
 .galleryImageContainer {
   background-color: green;
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   cursor: pointer;
+}
+
+.zoom {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 0;
+  width: 100%;
+  font-size: 40px;
+  background-color: black;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.zoom .glyphicon {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.zoom:hover {
+  opacity: .6;
+}
+
+
+#imageViewerBG {
+  background-color: black;
+  opacity: .7;
+  z-index: 1;
+}
+
+#imageViewer, #imageViewerBG {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+#imageViewerImage {
+  width: 70%;
+  height: 70vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#imageViewerImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#imageViewerControls {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#leftChange {
+  top: 0;
+  left: 0;
+}
+
+#rightChange {
+  right: 0;
+  top: 0;
+}
+
+#closeViewer {
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 15vh;
+}
+
+.imageViewerControl {
+  color: white;
+  font-size: 24px;
+  height: 100%;
+  width: 15%;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+}
+
+.imageViewerControl .glyphicon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+.imageViewerControl:hover .glyphicon {
+  color: #d1a054;
 }
 
 @media only screen and (min-width: 1000px) {

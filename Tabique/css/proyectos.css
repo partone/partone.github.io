@@ -138,15 +138,9 @@ html, body {
   }
 
   #proyectoHeader {
-    background-color: #2b2e28;
     padding-top: 80px;
     padding-bottom: 20px;
     margin: 0;
-  }
-
-  #proyectoHeader div {
-    color: white;
-    font-size: 35px;
   }
 
   .fillerBoxLast {

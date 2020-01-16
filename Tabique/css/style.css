@@ -75,7 +75,8 @@ header, #headerBG {
   width: 25%;
   margin-top: 14px;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 14px;
   color: white;
   transition: all 0.5s ease;
 }
@@ -107,7 +108,7 @@ header, #headerBG {
 
 footer {
   height: 100px;
-  background-color: #040302;
+  background-color: #ffeccc;
   width: 100%;
 }
 
@@ -148,7 +149,7 @@ footer img {
   }
 
   #headerHamburgerContainer {
-    margin-left: 52.5%;
+    margin-left: 50%;
     width: 10%;
     height: inherit;
   }

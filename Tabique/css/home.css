@@ -53,11 +53,11 @@ body {
 
 /********Landing**********/
 
-/*#contentLanding {
+#contentLandingMobile {
   position: relative;
 }
 
-#contentLanding img {
+#contentLandingMobile img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
@@ -69,7 +69,7 @@ body {
   right: 0;
   margin: auto;
   display: none;
-}*/
+}
 
 #backgroundFade {
   opacity: .1;
@@ -84,8 +84,8 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  opacity: .1;
-  background-image: url("../images/metalWall.jpg");
+  background: #040707;
+  /*background-image: url("../images/metalWall.jpg");*/
 }
 
 #metalWallBG, #metalWallBG2 {
@@ -127,7 +127,6 @@ body {
   color: #393E41;
   z-index: 1;
   padding-top: 70px;
-  padding-bottom: 100px;
 }
 
 #nuestraExperienciaHeader {
@@ -244,9 +243,9 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .contentWide {
-      margin-left: 10%;
-      margin-right: 10%;
-      width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
   }
 
   .contentDescription {
@@ -273,13 +272,21 @@ body {
     padding-left: 5%;
     padding-right: 5%;
   }
-/*
-  #contentProyectos {
+
+  #contentProyectosMobile {
     min-height: 0px;
     height: auto;
     padding-bottom: 60px;
   }
 
+  #metalWallBG, #metalWallBG2, #contentLandingMobile {
+    display: block;
+  }
+
+  #contentLanding {
+    display: none;
+  }
+/*
   #contentProyectosHeader {
     margin-top: 60px;
   }*/
