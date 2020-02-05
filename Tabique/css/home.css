@@ -104,7 +104,7 @@ body {
   background-color: #cd7f32;
   overflow: visible;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 25vh;
 }
 
 #contentLanding #right {
