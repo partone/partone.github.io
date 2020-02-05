@@ -14,14 +14,13 @@
 </head>
 <body>
   <div style="display: none" id="projectName">Acacias</div>
-  <div id="projectHeader">
+  <div id="projectHeader" >
     <p>Acacias</p>
   </div>
 
   <div id="contentContainer">
-
-    <div class="third standardVerticalMargins ">
-      <p class="thin caps centre techDescription">
+    <div class="third standardVerticalMargins" id="techDetails">
+      <p class="thin caps techDescription">
         255m<sup>2</sup><br>
         3 recámaras<br>
         9 baños<br>
@@ -29,15 +28,20 @@
         104 números<br>
       </p>
     </div>
-    <div class="third standardVerticalMargins">
-      <p class="caps largeFont buzzwords">
+
+    <div class="third containsImage standardVerticalMargins containsMap" id="locationMapMobile">
+      <img class="imageMap" src="../../images/maps/cuajimalpa.png" alt="Acacias">
+    </div>
+
+    <div class="third standardVerticalMargins" id="buzzwords">
+      <p class="caps largeFont buzzwords centre">
         Un <b>faro</b> en el desierto urbano
       </p>
     </div>
     <!--<div class="third containsImage standardVerticalMargins">
       <img class="imageWide" src="../../images/projects/Acacias/Acacias (7).jpg" alt="Acacias">
     </div>-->
-    <div class="third containsImage standardVerticalMargins containsMap">
+    <div class="third containsImage standardVerticalMargins containsMap" id="locationMap">
       <img class="imageMap" src="../../images/maps/cuajimalpa.png" alt="Acacias">
     </div>
 
@@ -76,7 +80,7 @@
         </div>
       </div>
       <div id="5" class="galleryImage">
-        <div class="galleryImageContainer wideImage">
+        <div class="galleryImageContainer">
           <img src="../../images/projects/Acacias/Acacias (5).jpg" alt="">
         </div>
         <div class="zoom">
@@ -101,7 +105,7 @@
         </div>
       </div>
       <div id="8" class="galleryImage">
-        <div class="galleryImageContainer">
+        <div class="galleryImageContainer wideImage">
           <img src="../../images/projects/Acacias/Acacias (8).jpg" alt="">
         </div>
         <div class="zoom">
@@ -148,7 +152,7 @@
 
   <div id="headerBG"></div>
   <header>
-    <div id="headerLogo">
+    <div onclick="window.open('../home.html')" id="headerLogo">
       <img src="../../images/logoBigTransparentText.png" alt="Logo">
     </div>
     <div id="headerBar">
@@ -197,12 +201,12 @@
   <div id="imageViewerBG"></div>
   <div id="imageViewer">
     <div id="imageViewerControls">
-      <div id="closeViewer" class="imageViewerControl"><span class="glyphicon glyphicon-remove-circle"></span></div>
+      <div id="closeViewer" class="imageViewerControl"></div>
       <div id="leftChange" class="imageViewerControl">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="glyphicon glyphicon-play-circle"></span>
       </div>
       <div id="rightChange" class="imageViewerControl">
-        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="glyphicon glyphicon-play-circle"></span>
       </div>
     </div>
     <div id="imageViewerImage">
