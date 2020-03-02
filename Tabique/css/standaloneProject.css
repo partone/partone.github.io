@@ -1,6 +1,6 @@
 
 body {
-  background-color: #ffeccc;
+  background-color: #eee;
   color: #393E41;
   min-height: 100vh;
   padding-top: 110px;
@@ -22,7 +22,8 @@ p {
   text-align: center;
   letter-spacing: 40px;
   font-weight: 300;
-  border: 2px solid #393E41;
+  border: 2px solid #AD631B;
+  color: #AD631B;
   text-align: center;
   padding-left: 40px;
 }

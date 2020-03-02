@@ -6,7 +6,8 @@ Tabique black: #040707
 Light grey: #393E41
 Dark grey: #2b2e28
 Light gold: #ffeccc
-Bronze: #cd7f32
+Very light grey: #EEE
+Bronze: #AD631B
 */
 
 * {
@@ -105,11 +106,11 @@ header, #headerBG {
   margin-right: 20px;
 }
 
-/********Footer************/
+/***********Footer***********/
 
 footer {
   height: 100px;
-  background-color: #ffeccc;
+  background-color: #eee;
   width: 100%;
 }
 
@@ -118,6 +119,60 @@ footer img {
   display:block;
   margin:auto;
 }
+
+/***********Contact***********/
+
+#contact {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 10;
+  background-color: #2b2e28;
+
+}
+
+#contactInfo {
+  width: 100%;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+#contactInfo a {
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
+}
+
+#contactInfo a:hover {
+  color: #d1a054;
+}
+
+#contactButterfly {
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 20px;
+}
+
+#contactButterfly img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;;
+}
+
+
 
 /* Mobile stuff */
 
@@ -131,7 +186,28 @@ footer img {
   position: fixed;
 }
 
+#contactHamburger {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#contactHamburger .burger-lines:before, #contactHamburger .burger-lines:after {
+  background-color: white !important;
+}
+
 @media only screen and (max-width: 1000px) {
+  #contactInfo {
+    font-size: 24px;
+  }
+
+  #contactButterfly {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 20px;
+  }
+
   #headerBar, #headerSocialMedia {
     display: none;
   }
@@ -147,19 +223,16 @@ footer img {
     display: none;
     box-shadow: 0px 4px 6px 0px rgb(0,0,0,.8);
     z-index: 99;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
   }
 
   #headerHamburgerContainer {
     margin-left: 50%;
     width: 10%;
     height: inherit;
-  }
-
-  #hamburgerMenu {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
   }
 
   .hamburgerElement {

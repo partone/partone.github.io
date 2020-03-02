@@ -11,6 +11,7 @@ $( document ).ready(function() {
     //Logo click
     $("#headerLogo").click(function() {
       removeSelectedClasses();
+      $("#contact").fadeOut(200);
       $("#inicioButton").addClass("headerBarElementSelected");
       $([document.documentElement, document.body]).animate({
           scrollTop: 0
@@ -20,6 +21,7 @@ $( document ).ready(function() {
     //Set the menu buttons
     $("#inicioButton").click(function() {
       removeSelectedClasses();
+      $("#contact").fadeOut(200);
       $("#inicioButton").addClass("headerBarElementSelected");
       $([document.documentElement, document.body]).animate({
           scrollTop: 0
@@ -28,6 +30,7 @@ $( document ).ready(function() {
 
     $("#quienesSomosButton").click(function() {
       removeSelectedClasses();
+      $("#contact").fadeOut(200);
       $("#quienesSomosButton").addClass("headerBarElementSelected");
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#contentNosotros").offset().top
@@ -36,24 +39,33 @@ $( document ).ready(function() {
 
     $("#proyectosButton").click(function() {
       removeSelectedClasses();
+      $("#contact").fadeOut(200);
       $("#proyectosButton").addClass("headerBarElementSelected");
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#contentProyectos").offset().top
       }, 1000);
     });
 
+    $("#contactoButton").click(function() {
+      removeSelectedClasses();
+      $("#contactoButton").addClass("headerBarElementSelected");
+      $("#contact").fadeIn(600);
+    });
+
     //Select header options depending on scroll position
     $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll < $("#contentLanding").height() / 2) {
-          removeSelectedClasses();
-          $("#inicioButton").addClass("headerBarElementSelected");
-        } else if(scroll > $("#contentNosotros").offset().top + ($("#contentProyectos").height() / 2)) {
-          removeSelectedClasses();
-          $("#proyectosButton").addClass("headerBarElementSelected");
-        } else if(scroll > $("#contentLanding").offset().top + ($("#contentNosotros").height() / 2)) {
-          removeSelectedClasses();
-          $("#quienesSomosButton").addClass("headerBarElementSelected");
+        if($("#contact").is(":hidden")){
+          var scroll = $(window).scrollTop();
+          if (scroll < $("#contentLanding").height() / 2) {
+            removeSelectedClasses();
+            $("#inicioButton").addClass("headerBarElementSelected");
+          } else if(scroll > $("#contentNosotros").offset().top + ($("#contentProyectos").height() / 2)) {
+            removeSelectedClasses();
+            $("#proyectosButton").addClass("headerBarElementSelected");
+          } else if(scroll > $("#contentLanding").offset().top + ($("#contentNosotros").height() / 2)) {
+            removeSelectedClasses();
+            $("#quienesSomosButton").addClass("headerBarElementSelected");
+          }
         }
     });
 

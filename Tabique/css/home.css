@@ -6,9 +6,16 @@ body {
 .paralaxBG {
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  background-image: url('../images/homeBG.jpg');
+  -moz-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: 65% auto;
+  opacity: .8;
 }
 
 .columnThird {
@@ -56,6 +63,7 @@ body {
 #contentLandingMobile {
   position: relative;
   display: none;
+  background-color: #040707;
 }
 
 #contentLandingMobile img {
@@ -101,7 +109,7 @@ body {
 
 #contentLanding #left {
   width: 38%;
-  background-color: #cd7f32;
+  background-color: #AD631B;
   overflow: visible;
   z-index: 1;
   padding-top: 25vh;
@@ -135,7 +143,7 @@ body {
 /********Nosotros**********/
 
 #contentNosotros {
-  background-color: #ffeccc;
+  background-color: #eee;
   color: #393E41;
   z-index: 1;
   padding-top: 70px;
@@ -233,7 +241,7 @@ body {
 /********Footer************/
 
 footer {
-  background-color: #cd7f32;
+  background-color: #eee;
 }
 
 
