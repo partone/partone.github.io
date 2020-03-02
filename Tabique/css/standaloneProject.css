@@ -28,6 +28,12 @@ p {
   padding-left: 40px;
 }
 
+.longProjectName p {
+  font-size: 32px !important;
+  letter-spacing: 12px !important;
+  padding: 8px;
+}
+
 #contentContainer {
   width: 100%;
   display: flex;

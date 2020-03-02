@@ -46,12 +46,6 @@ $( document ).ready(function() {
       }, 1000);
     });
 
-    $("#contactoButton").click(function() {
-      removeSelectedClasses();
-      $("#contactoButton").addClass("headerBarElementSelected");
-      $("#contact").fadeIn(600);
-    });
-
     //Select header options depending on scroll position
     $(window).scroll(function() {
         if($("#contact").is(":hidden")){
@@ -69,11 +63,6 @@ $( document ).ready(function() {
         }
     });
 
-    //Remove the selected class from header options
-    function removeSelectedClasses() {
-      $(".headerBarElement").removeClass("headerBarElementSelected");
-    }
-
     //Initial header check
     var scroll = $(window).scrollTop();
     if (scroll < $("#contentLanding").height() / 2) {
@@ -87,3 +76,8 @@ $( document ).ready(function() {
       $("#quienesSomosButton").addClass("headerBarElementSelected");
     }
 });
+
+//Remove the selected class from header options
+function removeSelectedClasses() {
+  $(".headerBarElement").removeClass("headerBarElementSelected");
+}
