@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Graphance</title>
+
+<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../libs/jquery-ui/jquery-ui.css" />
+<link rel="stylesheet" href="../libs/colorpicker/css/colorpicker.css" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/purePopup.css">
+<link rel="stylesheet" href="../css/keyframeanimation.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script>
+/*************GLOBAL VARIABLES***********/
+	var scene 				= null,
+		renderer            = null,
+		camera              = null,
+		orbitCamera         = null,
+		perspectiveCamera   = null,
+		root                = null,
+		boy					= null,
+		girl 				= null,
+		dancer              = null,
+		group               = null,
+		orbitControls       = null,
+		mixer               = null,
+		raycaster           = null,
+		ground              = null,
+		currentSceneIndex   = 0;			//For keeping track of the currently selected scene
+		controlls           = null,
+		cube = null;
+
+
+	var scenes = [],
+		morphs  = [],
+		cubes = [],
+		dancers = [];
+
+	//Switching cameras variables
+	var cameraRig,
+		activeCamera,
+		activeHelper,
+		cameraPerspective,
+		cameraOrbit,
+		cameraPerspectiveHelper,
+		cameraOrbitHelper,
+		playScene = false;
+
+	var duration = 20000; // ms
+	var currentTime = Date.now();
+
+	//Lights
+	var spotLight = null,
+		ambientLight = null;
+	//Shadow
+	var SHADOW_MAP_WIDTH = 2048, SHADOW_MAP_HEIGHT = 2048;
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="../libs/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../libs/jquery-ui/jquery-ui.js"></script>
+
+<script src="../libs/three.js/three.js"></script>
+<script src="../libs/three.js/controls/OrbitControls.js"></script>
+<script src="../libs/colorpicker/js/colorpicker.js"></script>
+<script src="../libs/three.js/loaders/OBJLoader.js"></script>
+<script src="../libs/three.js/controls/OrbitControls.js"></script>
+<script src="../libs/three.js/controls/DragControls.js"></script>
+<script src="../libs/three.js/loaders/inflate.min.js"></script>
+<script src="../libs/three.js/loaders/FBXLoader.js"></script>
+<script src="../libs/three.js/utils/cloneFBX.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../libs/tween.js/tween.js"></script>
+<script src="../libs/keyframe.js/keyframe.js"></script>
+
+<script src="js/selectScene.js"></script>
+<script src="js/editScene.js"></script>
+<script src="js/newScene.js"></script>
+<script src="js/graphance.js"></script>
+<script src="js/cameras.js"></script>
+<script src="js/lights.js"></script>
+<script src="js/cubes.js"></script>
+<script src="js/dragDrop.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/addName.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/play.js"></script>
+<script src="js/image.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+
+				var canvas = document.getElementById("webglcanvas");
+
+				//Resize the canvas image
+				$('#webglcanvas').attr("width",$(window).width());
+				$('#webglcanvas').attr("height",$(window).height());
+
+				// create the scene
+				createScene(canvas);
+				run();
+				cameras();
+			}
+	);
+
+</script>
+
+</head>
+<body>
+
+	<div id="container">
+		<div class="row" id="main_row">
+			<div class="col-md-2"  id="scenes">
+				<div class='box boxSelected' index="0">
+					<div class='boxControls'>
+						<div class="sceneMoveUp">⬆️</div>
+						<div class="sceneMoveDown">⬇️</div>
+						<div class="sceneDelete">❌</div>
+					</div>
+				</div>
+				<div id="add_scene" class="boxAdd"><img src="../images/plus.png" alt=""></div>
+			</div>
+			<div class="col-md-10" style="width: 100%;height: 100%;padding:0;">
+				<div id="addModels">
+					<br>
+
+					<label class= "container">Choose camera view:</label>
+						<button id="camera1"> Panoramic</button>
+						<button id="camera2">Top view</button>
+						<br><br>
+
+						<label class= "container">Add Dancers:</label>
+					<button id="addBoy">Add Blue</button>
+					<button id="addGirl">Add Pink</button>
+					<br><br>
+
+					<label class="container" id="label">
+							<input type="checkbox"   id="changeName" value="name"> Change names
+							<span class="checkmark"></span>
+						  </label>
+				</div>
+				<div class="row" id="canvas">
+					<canvas id="webglcanvas"></canvas>
+				</div>
+				<div class="row" id="music_player">
+					<div id="music_stuff">
+						<div class="container-audio">
+								<input type="file" id="rll" />
+								<div id="music_controls">
+									<audio id="rllly" onseeking="seekPlayer()" controls onplaying="playTransitions()" onpause="pausePlayer()">
+									  <source src="" id="rlly" />
+									</audio>
+									<button id="music_set_time" onclick="setPlayerTime()">Set time</button>
+								</div>
+						</div>
+					</div>
+					<div id="object_properties">
+						<div class="object_properties_child">
+							<div class="object_properties_child_title">Scene name: </div>
+							<div class="object_properties_child_value" id="scene_name">Scene 1</div>
+						</div>
+						<div class="object_properties_child">
+							<div class="object_properties_child_title">Scene duration (s): </div>
+							<div class="object_properties_child_value"><input id="scene_duration" value="3" min =".1"  type="number" id step=".1"></div>
+						</div>
+
+					<button id="editBtn" type="button" onclick="changeSceneName()">Edit</button>
+					<button id="saveBtn" type="button" onclick="saveAsImage()">Save</button>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
