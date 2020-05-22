@@ -121,9 +121,10 @@ footer {
 
 @media only screen and (max-width: 1000px) {
 	#circle {
-		height: 70vw;
-		width: 70vw;
-		border-radius: 5vw;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
 	}
 
 	#surname {
@@ -144,15 +145,20 @@ footer {
 		/*width: 70vh;*/
 	}
 
+	.subtitles {
+		margin-top: 20px;
+	}
+
 	.subtitle {
-		height: 55px;
+		height: 110px;
 		width: 70vw;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.subtitle a {
-		width: 70%;
-		font-size: 30px;
+		width: 90%;
+		font-size: 35px;
+		line-height: 95px;
 	}
 }
