@@ -1,0 +1,200 @@
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+a, a:visited, a:active, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  transition: all .4s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a:before {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+
+a:hover:before {
+  width: 100%;
+}
+
+/* Canvas */
+
+body, html, canvas {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+  background-color: #EEE;
+}
+
+/* Everything else */
+
+#mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shortContainter {
+  height: 25vh;
+}
+
+.tallContainer {
+  height: 50vh;
+}
+
+.subcontainer {
+  margin-left: 10%;
+  width: 90%;
+  cursor: default;
+}
+
+/* Menu */
+
+.menuContainer {
+  position: relative;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 5px;
+  width: 80%;
+  margin-left: 1%;
+  font-weight: 500;
+}
+
+.menuItem {
+  width: 25%;
+  font-size: 26px;
+}
+
+/* Name */
+
+.nameContainer {
+  height: 33vh;
+  pointer-events: none;
+}
+
+#name {
+  border-top: black 5px solid;
+  text-align: justify;
+  font-size: 13vw;
+  display: table-cell;
+}
+
+/* Description */
+
+.descriptionContainer {
+  pointer-events: none;
+}
+
+#description {
+  margin-left: 1%;
+  font-weight: 500;
+  width: 75%;
+  font-size: 3vw;
+}
+
+/*Mobile*/
+
+.mobileMenuContainer {
+  display: none;
+}
+
+#mobileTip {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  a:hover:before {
+    width: 0;
+  }
+
+  #mainContainer {
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  .menuContainer {
+    display: none;
+  }
+
+  .nameContainer {
+    margin-top: 80px;
+  }
+
+  #name {
+    border: none;
+  }
+
+  .tallContainer {
+    height: 170px;
+  }
+
+  .shortContainter {
+    height: 150px;
+  }
+
+  .mobileMenuContainer {
+    height: auto;
+  }
+
+  .descriptionContainer {
+    height: 110px;
+  }
+
+  #description {
+    padding-bottom: 30px;
+    border-bottom: black solid 5px;
+  }
+
+  .mobileMenuContainer {
+    display: block
+  }
+
+  #menu {
+    position: relative;
+    width: 75%;
+  }
+
+  .menuItem {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: black solid 5px;
+    font-size: 3vw;
+  }
+
+  #mobileTip {
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 75%;
+  }
+}

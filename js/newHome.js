@@ -5,6 +5,7 @@ var ypos;
 
 //Canvas elements
 var canvas = document.getElementById('canvas');
+var mainContainer = document.getElementById('mainContainer');
 var ctx = canvas.getContext("2d");
 
 //Circle array
@@ -32,12 +33,10 @@ function setUp(){
 
 
 //On click get mouse location
-canvas.addEventListener("click", function(){
-
-
+mainContainer.addEventListener("click", function(){
 	//Get mouse position
-	xpos = event.offsetX;
-	ypos = event.offsetY;
+	xpos = event.clientX;
+	ypos = event.clientY;
 
 	//Create a circle object
 	var circle ={
@@ -57,7 +56,6 @@ canvas.addEventListener("click", function(){
 
 function animate(){
 	if(frameCount % 30 == 0){
-	//if(frameCount % 40 == Math.floor(Math.random() * 40) || frameCount == 1){
 		var randColour = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 		ctx.strokeStyle = randColour;
 	}
@@ -77,13 +75,20 @@ function animate(){
     if(frameCount){requestAnimationFrame(animate);}
 	//ctx.clearRect(0, 0, canvas.width, canvas.height);
     for(var i = 0; i < circles.length; i++){
-		ctx.beginPath();
-		ctx.arc(circles[i].x, circles[i].y, circles[i].rad, 0, 2 * Math.PI);
-		ctx.stroke();
+			//Kill the circle once it passes the window limit
+			if(circles[i].rad < canvas.width) {
+				//Grow the circle
+				ctx.beginPath();
+				ctx.arc(circles[i].x, circles[i].y, circles[i].rad, 0, 2 * Math.PI);
+				ctx.stroke();
 
-		//circles[i].rad = circles[i].rad*1.01;
-		circles[i].rad = circles[i].rad + .8;
-		circles[i].y = circles[i].y;
+				//circles[i].rad = circles[i].rad*1.01;
+				circles[i].rad = circles[i].rad + .8;
+				circles[i].y = circles[i].y;
+			} else {
+				//Remove the cirlce from the circles array if it's big enough
+				circles.splice(i, 1);
+			}
     }
     frameCount++;
 }
