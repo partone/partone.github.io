@@ -34,6 +34,8 @@ function setUp(){
 
 //On click get mouse location
 mainContainer.addEventListener("click", function(){
+	document.getElementById('PCTip').style.display = "none";
+
 	//Get mouse position
 	xpos = event.clientX;
 	ypos = event.clientY;

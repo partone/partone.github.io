@@ -121,6 +121,13 @@ body, html, canvas {
   font-size: 3vw;
 }
 
+#PCTip {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	font-size: 14px;
+}
+
 /*Mobile*/
 
 .mobileMenuContainer {
@@ -197,4 +204,8 @@ body, html, canvas {
     font-size: 20px;
     width: 75%;
   }
+
+	#PCTip {
+		display: none;
+	}
 }
