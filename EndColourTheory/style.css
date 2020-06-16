@@ -1,3 +1,8 @@
+/*
+Orange: #fc8403
+
+*/
+
 html, body {
   padding: 0;
   margin: 0;
@@ -50,19 +55,19 @@ b {
 }
 
 #headerLogo {
-  width: 50%;
+  width: 30%;
 }
 
 #headerMenu {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .headerMenuItem {
   padding-top: 30px;
-  width: 30%;
-  text-align: right;
+  width: 25%;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
