@@ -17,6 +17,18 @@ b {
   font-weight: 800;
 }
 
+hr {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a, a:active, a:visited, a:hover {
+  color: black;
+}
+
 /* Landing */
 
 #landing {
@@ -95,4 +107,8 @@ b {
 .sectionDescriptionLarge {
   font-size: 20px;
   line-height: 30px;
+}
+
+.sectionDescriptionShort {
+  text-align: center;
 }
