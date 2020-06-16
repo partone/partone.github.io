@@ -1,0 +1,93 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+b {
+  font-weight: 800;
+}
+
+/* Landing */
+
+#landing {
+  width: 100%;
+  height: 100vh;
+}
+
+#landingTitle {
+  text-align: center;
+  color: white;
+  padding-top: 40vh;
+  font-weight: bold;
+  font-size: 60px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Concert One', cursive;
+}
+
+.parallax {
+  background-image: url("images/painting3.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  width: 100%;
+  color: white;
+  height: 90px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#headerLogo {
+  width: 50%;
+}
+
+#headerMenu {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerMenuItem {
+  padding-top: 30px;
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Sections */
+
+.section {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-height: 100px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Concert One', cursive;
+}
+
+.sectionDescriptionLarge {
+  font-size: 20px;
+  line-height: 30px;
+}
