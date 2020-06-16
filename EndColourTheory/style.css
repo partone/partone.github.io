@@ -18,6 +18,7 @@ b {
 }
 
 hr {
+  border-color: #999;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
@@ -111,4 +112,25 @@ a, a:active, a:visited, a:hover {
 
 .sectionDescriptionShort {
   text-align: center;
+}
+
+/* Colour theory lies */
+
+#liesContainer {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.lieTitle .glyphicon {
+  margin-right: 10px;
+}
+
+.lie td {
+  font-size: 18px;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  cursor: pointer;
+  line-height: 30px;
 }
