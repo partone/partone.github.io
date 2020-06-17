@@ -22,7 +22,7 @@ hr {
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -155,4 +155,135 @@ a, a:active, a:visited, a:hover {
   font-size: 16px;
   margin-top: 15px;
   display: none;
+}
+
+/* Facts */
+
+#factContainer {
+  margin-top: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+.fact {
+  padding: 60px;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.factTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.factExplanation {
+  font-size: 16px;
+}
+
+.factNumber {
+  text-align: center;
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.factDemo {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orangeSquare {
+  width: 100px;
+  height: 100px;
+  background: #ffa82e;
+  border-radius: 5px;
+}
+
+#discreteDemo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#orangeSquareSpeech {
+  position: absolute;
+  margin-left: 110px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.fact:nth-child(odd) {
+  background-color: #eee;
+}
+
+#nailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  min-width: 100px;
+}
+
+#nailDemoExplanation {
+  width: 70%;
+}
+
+.nail {
+  clip-path: polygon(30% 15%, 70% 15%, 70% 22%, 54% 22%, 51% 72%, 49% 72%, 46% 22%, 30% 22%);
+  background-color: #555;
+  height: 100px;
+  width: 50px;
+}
+
+#rusty {
+  background-color: #825105;
+}
+
+#flag {
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flagDemoExplanation {
+  width: 65%;
+  margin-right: 5%;
+}
+
+#flag div {
+  height: 100px;
+  width: 33%;
+}
+
+#flag .one, #flag .thr {
+  background-color: #379392;
+}
+
+#flag .two {
+  background-color: #9834eb;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  #headerMenu {
+    display: none;
+  }
+
+  #headerLogo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  .landingTitle {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+  }
 }
