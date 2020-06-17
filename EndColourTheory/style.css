@@ -221,12 +221,12 @@ a, a:active, a:visited, a:hover {
 #nailsContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 20%;
-  min-width: 100px;
+  width: 120px;
 }
 
 #nailDemoExplanation {
   width: 70%;
+  margin-bottom: 30px;
 }
 
 .nail {
@@ -243,15 +243,15 @@ a, a:active, a:visited, a:hover {
 #flag {
   width: 20%;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 10%;
   height: 100px;
   display: flex;
   flex-wrap: wrap;
 }
 
 #flagDemoExplanation {
-  width: 65%;
-  margin-right: 5%;
+  width: 60%;
+  margin-left: 5%;
 }
 
 #flag div {
