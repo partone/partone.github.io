@@ -30,6 +30,9 @@ a, a:active, a:visited, a:hover {
   color: black;
 }
 
+a sup {
+}
+
 /* Landing */
 
 .landing {
