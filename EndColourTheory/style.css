@@ -159,6 +159,10 @@ a, a:active, a:visited, a:hover {
 
 /* Facts */
 
+#colourFact {
+  margin-bottom: 70px;
+}
+
 #factContainer {
   margin-top: 50px;
   width: 100%;
