@@ -11,6 +11,11 @@ $("#headerMenuMyth").click(function() {
     }, 800);
 });
 
+$("#headerMenuFact").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#colourFact").offset().top
+    }, 800);
+});
 
 // Myth debunking
 $("tr").click(function(){

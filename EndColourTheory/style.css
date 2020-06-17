@@ -32,12 +32,12 @@ a, a:active, a:visited, a:hover {
 
 /* Landing */
 
-#landing {
+.landing {
   width: 100%;
   height: 100vh;
 }
 
-#landingTitle {
+.landingTitle {
   text-align: center;
   color: white;
   padding-top: 40vh;
@@ -51,7 +51,14 @@ a, a:active, a:visited, a:hover {
 
 .parallax {
   background-image: url("images/painting3.jpg");
-  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("images/painting2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,6 +135,7 @@ a, a:active, a:visited, a:hover {
 
 #liesContainer {
   margin-top: 30px;
+  margin-bottom: 80px;
   border-collapse: collapse;
   width: 100%;
 }
