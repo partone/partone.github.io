@@ -123,14 +123,18 @@ a, a:active, a:visited, a:hover {
   margin-bottom: 200px;
 }
 
-.lieTitle .glyphicon {
-  margin-right: 10px;
+.glyphContainer, .lieTitle {
+  cursor: pointer;
 }
 
 .lie td {
   font-size: 18px;
   border: 1px solid #dddddd;
   padding: 20px;
-  cursor: pointer;
   line-height: 30px;
+}
+
+.lieExplanation {
+  font-size: 16px;
+  margin-top: 15px;
 }
