@@ -257,8 +257,14 @@ a sup {
 }
 
 #flagDemoExplanation {
-  width: 60%;
-  margin-left: 5%;
+  width: 55%;
+  margin-left: 10%;
+}
+
+#qatarFlag {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
 }
 
 #flag div {
