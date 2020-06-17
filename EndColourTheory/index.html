@@ -17,10 +17,10 @@
         LOGO HERE
       </div>
       <div id="headerMenu">
-        <div class="headerMenuItem"><span>What?</span></div>
-        <div class="headerMenuItem">Colour Myth</div>
-        <div class="headerMenuItem">Colour Fact</div>
-        <div class="headerMenuItem">Fact Society</div>
+        <div class="headerMenuItem" id="headerMenuWhat"><span>What?</span></div>
+        <div class="headerMenuItem" id="headerMenuMyth"><span>Colour Myth</span></div>
+        <div class="headerMenuItem" id="headerMenuFact"><span>Colour Fact</span></div>
+        <div class="headerMenuItem" id="headerMenuSociety"><span>Fact Society</span></div>
       </div>
     </div>
     <div id="landingTitle">IT'S TIME TO END THE COLOUR THEORY MYTH</div>
@@ -99,7 +99,6 @@
           <td class="glyphContainer"><span class="glyphicon glyphicon-plus"></td>
           <td>
             <div class="lieTitle">The watered-down meaning of 'light colours'</div>
-            <div class="lieExplanation">
               <div class="lieExplanation">
                 Light and dark, <i>white</i> and <b>black</b>.  If these word pairs seem naturally linked, it's likely you have been exposed to colour theory.  If we read into these words a little more we may begin to notice a slight discord in their relationship.
                 <br><br>
@@ -109,7 +108,6 @@
                 <br><br>
                 I have never been blinded by the sun in Van Gogh's <a style="text-decoration:underline" target="_blank" href="images/WheatfieldWithAReaper.jpg">Wheatfield with a Reaper</a> or seen a shadow cast by <a style="text-decoration:underline" target="_blank" href="images/StarryNight.jpg">Starry Night</a>.  Most people use light/dark terminology while still believing that colour is limited in its ability to true light. This is one of the many deceptions that colour theory has taught a large part of the population not to question.
               </div>
-            </div>
           </td>
         </tr>
 
@@ -120,7 +118,12 @@
              <span style="color:#d6b018"><b>yellow</b></span>, and
              <span style="color:#485bf0"><b>blue</b></span>
             ) cannot be obtained through mixing colours
-          </div></td>
+          </div>
+          <div class="lieExplanation">Go to any paint shop and ask for <span style="color:#b81a1a"><b>red</b></span> paint and you will be flooded with different options and vast quantities available.  Yet, how can so much paint of a primary colour exist if primary colours can't be created through mixing of other colours?
+          <br><br>
+          Surely there isn't enough <span style="color:#b81a1a"><b>red</b></span> cabbage, berries, and human blood to satisfy the global demand for <span style="color:#b81a1a"><b>red</b></span> dye for all the paint, clothing, food colouring, and all its other possible uses.  To fish even deeper, how can any primary colour be created by nature assuming traditional colour theory?
+          </div>
+        </td>
         </tr>
 
         <tr class="lie">
@@ -142,7 +145,7 @@
             <div class="lieTitle">Colours can be defined through frequencies</div>
             <div class="lieExplanation">There exists the belief within colour theory that all colours occupy a place within the spectrum of visible light and that each one emits a certain wavelength in respect to its frequency which we perceive as a certain colour.  However, let's delve deeper into the term "frequecy".
             <br><br>
-            Red colours occupy the highest frequency of the <a style="text-decoration:underline" target="_blank" href="images/VisibleSpectrum.jpg">visible light spectrum</a> with a whopping frequency of 700nm.  With such a tremendous frequency, you would expect red to be everywhere but in reality, red is not found in the natural world with great frequency.  Roses, apples, red M&Ms, and blood are among the few naturally occuring red <i>things</i>.  <span style="color:#485bf0"><b>Blue</b></span>, on the other hand, should logically have an incredibly high frequency considering that the ocean occupies two-thirds of the Earth's surface (assuming the ocean is blue which is debated in another quesiton).  What about <b>black</b> that doesn't even appear on the visible light spectrum yet is prevalent throughout the entirety of space.
+            Red colours occupy the highest frequency of the <a style="text-decoration:underline" target="_blank" href="images/VisibleSpectrum.jpg">visible light spectrum</a> with a whopping frequency of 668-789THz.  With such a tremendous frequency, you would expect <span style="color:#9834eb"><b>violet</b></span> to be everywhere but in reality, it's not found in the natural world with great prevalence.  Lavender, eggplant, grape Nerds<sup>TM</sup>, and amethysts are among the few naturally occuring <span style="color:#9834eb"><b>violet</b></span> <i>things</i>.  <span style="color:#37912c"><b>Green</b></span>, on the other hand, should logically have an incredibly high frequency considering that most of the world's landmass is covered in some form of vegetation, yet it occupies the middle range.  What about <b>black</b> that doesn't even appear on the visible light spectrum yet is prevalent throughout the entirety of space.
             </div>
           </td>
         </tr>
@@ -151,19 +154,12 @@
           <td class="glyphContainer"><span class="glyphicon glyphicon-plus"></td>
           <td>
             <div class="lieTitle">Mixing all the colours together produces black...or was it white?</div>
-            <div class="lieExplanation">What many people fail to realise about traditional colour theory is that there are two near-opposing schools of thought.  Subtractive colour theory tells us that mixing all colours produces black while additive colour theory tells us that mixing all colours produces white.
+            <div class="lieExplanation">What many people fail to realise about traditional colour theory is that there are two near-opposing schools of thought.  Subtractive colour theory tells us that mixing all colours produces <b>black</b> while additive colour theory tells us that mixing all colours produces <i>white</i>.
             <br><br>
             Much like the Great Schism divided Christianity, colour theory was also divided in its early stages.  In 1850, Hermann Von Helmholtz introduced additive colour theory to the already existing subtractive colour theory.  Whether Helmholtz's creation was an imperfect copy or intentional distinction from traditional colour theory is unknown.
             <br><br>
-            However, unlike the branches of Christianity, additive and subtractive colour theory are both present in mainstream culture and their differences are rarely questioned.  <b>How can seemingly identical colour theories produce opposite results?</b>
+            However, unlike the branches of Christianity, additive and subtractive colour theory are both present in mainstream culture and their differences are rarely questioned.  How can seemingly identical colour theories produce opposite results?
             </div>
-          </td>
-        </tr>
-
-        <tr class="lie">
-          <td><span class="glyphicon glyphicon-plus"></td>
-          <td>
-            <div class="lieTitle">The hot and cold duality of <span style="color:#485bf0"><b>blue</b></span></div>
           </td>
         </tr>
       </table>
@@ -172,4 +168,6 @@
   </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </html>

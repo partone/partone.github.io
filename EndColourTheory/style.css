@@ -1,6 +1,6 @@
 /*
 Orange: #fc8403
-
+Purple:
 */
 
 html, body {
@@ -81,9 +81,19 @@ a, a:active, a:visited, a:hover {
   padding-top: 30px;
   width: 25%;
   text-align: center;
-  font-weight: bold;
   text-transform: uppercase;
 }
+
+.headerMenuItem span {
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.headerMenuItem span:hover {
+  font-size: 16px;
+}
+
 
 /* Sections */
 
@@ -120,7 +130,6 @@ a, a:active, a:visited, a:hover {
   margin-top: 30px;
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 200px;
 }
 
 .glyphContainer, .lieTitle {
@@ -137,4 +146,5 @@ a, a:active, a:visited, a:hover {
 .lieExplanation {
   font-size: 16px;
   margin-top: 15px;
+  display: none;
 }
