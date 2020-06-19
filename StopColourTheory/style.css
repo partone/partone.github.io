@@ -26,8 +26,12 @@ a, a:active, a:visited, a:hover {
   color: black;
 }
 
+a {
+  text-decoration: underline;
+}
+
 a sup, sup a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 ul {
