@@ -1,3 +1,6 @@
+var d = new Date();
+var n = d.getFullYear();
+$("footer").html("© " + n + " Fact Society&nbsp&nbsp●&nbsp&nbsp<i>Veritas Occulta</i>");
 
 $("#headerMenuWhat").click(function() {
     $([document.documentElement, document.body]).animate({
@@ -16,6 +19,13 @@ $("#headerMenuFact").click(function() {
         scrollTop: $("#colourFact").offset().top
     }, 800);
 });
+
+$("#headerMenuSociety").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#theSociety").offset().top
+    }, 800);
+});
+
 
 // Myth debunking
 $("tr").click(function(){
