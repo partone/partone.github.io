@@ -26,7 +26,8 @@ a, a:active, a:visited, a:hover {
   color: black;
 }
 
-a sup {
+a sup, sup a {
+  text-decoration: none !important;
 }
 
 ul {
@@ -202,6 +203,7 @@ li {
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
+  line-height: 25px;
 }
 
 .factTitle {
