@@ -92,6 +92,7 @@ body, html, canvas {
 .menuItem {
   width: 25%;
   font-size: 26px;
+	text-align: center;
 }
 
 /* Name */
@@ -193,9 +194,14 @@ body, html, canvas {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: black solid 5px;
+    border-bottom: black solid 2px;
     font-size: 3vw;
   }
+
+	.menuItem a {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
   #mobileTip {
     display: block;

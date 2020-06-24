@@ -3,9 +3,9 @@ body, html, canvas {
 }
 
 #projectsTitle {
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #projectsContainer {
@@ -24,7 +24,8 @@ body, html, canvas {
 }
 
 .projectBox {
-  background-color: white;
+  background-color: black;
+	color: white;
   height: 100%;
   border-radius: 5%;
   position: relative;
@@ -60,8 +61,8 @@ body, html, canvas {
 .projectBoxBG {
   width: 100%;
   height: 100%;
-
-  background-color: green;
+	box-shadow: 0 0 0 2px black;
+  background-color: #555;
   border-radius: 5%;
   overflow: hidden;
 }
@@ -69,6 +70,7 @@ body, html, canvas {
 .projectBoxBG img {
   height: 100%;
 }
+
 
 /*Mobile large*/
 
