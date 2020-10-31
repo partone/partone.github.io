@@ -2,6 +2,8 @@ var d = new Date();
 var n = d.getFullYear();
 $("footer").html("© " + n + " Fact Society&nbsp&nbsp●&nbsp&nbsp<i>Veritas Occulta</i>");
 
+$("#countdown").html("August 27th " + (n + 5));
+
 $("#headerMenuWhat").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#welcome").offset().top - 50
