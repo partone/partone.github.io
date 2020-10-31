@@ -185,200 +185,21 @@ li {
   text-align: center;
 }
 
-/* Colour theory lies */
+/* Countdown */
 
-#liesContainer {
+#countdownSection {
+  background-color: white;
+  padding-bottom: 10px;
   margin-top: 30px;
-  margin-bottom: 80px;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.glyphContainer, .lieTitle {
-  cursor: pointer;
-}
-
-.lie td {
-  font-size: 18px;
-  border: 1px solid #dddddd;
-  padding: 20px;
-  line-height: 30px;
-}
-
-.lieExplanation {
-  font-size: 16px;
-  margin-top: 15px;
-  display: none;
-}
-
-/* Facts */
-
-#colourFact {
-  margin-bottom: 70px;
-}
-
-#factContainer {
-  margin-top: 50px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.fact {
-  padding: 60px;
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
-  line-height: 25px;
-}
-
-.factTitle {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.factExplanation {
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.factNumber {
-  text-align: center;
-  font-weight: 400;
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.factDemo {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.factDemo * {
-  font-size: 14px;
-}
-
-.orangeSquare {
-  width: 100px;
-  height: 100px;
-  background: #ffa82e;
-  border-radius: 5px;
-}
-
-#discreteDemo {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#orangeSquareSpeech {
-  position: absolute;
-  margin-left: 110px;
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.fact:nth-child(odd) {
-  background-color: #eee;
-}
-
-#nailsContainer, #nailsSubContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 120px;
-}
-
-#nailsContainer {
-  width: 100%;
-}
-
-#nailsSubContainer {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#nailDemoExplanation, #orangeJuiceExplanation {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.nail {
-  clip-path: polygon(30% 15%, 70% 15%, 70% 22%, 54% 22%, 51% 72%, 49% 72%, 46% 22%, 30% 22%);
-  background-color: #555;
-  height: 100px;
-  width: 50px;
-}
-
-#rusty {
-  background-color: #825105;
-}
-
-#flag {
-  width: 20%;
-  margin-left: 5%;
-  margin-right: 10%;
-  height: 100px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#orangeContainer {
-  width: 100%;
   margin-bottom: 20px;
-  position: relative;
 }
 
-#orange {
-  height: 100px;
-  width: 100px;
-  background-color: #ffa82e;
-  border-radius: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px
+#countdownSection * {
+  color: #060e4f;
 }
 
-#leaf {
-  height: 100px;
-  width: 120px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: -50px;
-  background-color: #37912c;
-  clip-path: polygon(57% 44%, 73% 41%, 87% 43%, 98% 55%, 76% 58%, 61% 53%, 48% 71%);
-  z-index: -1;
-}
-
-#flagDemoExplanation {
-  width: 55%;
-  margin-left: 10%;
-}
-
-#qatarFlag {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 20px;
-}
-
-#flag div {
-  height: 100px;
-  width: 33%;
-}
-
-#flag .one, #flag .thr {
-  background-color: #379392;
-}
-
-#flag .two {
-  background-color: #9834eb;
+#countdown {
+  margin-top: 0px;
 }
 
 /* Fact Society */
