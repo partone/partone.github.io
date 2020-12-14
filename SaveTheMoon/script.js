@@ -10,15 +10,9 @@ $("#headerMenuWhat").click(function() {
     }, 800);
 });
 
-$("#headerMenuMyth").click(function() {
+$("#headerMenuAction").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#colourMyth").offset().top - 40
-    }, 800);
-});
-
-$("#headerMenuFact").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#colourFact").offset().top
+        scrollTop: $("#takeAction").offset().top
     }, 800);
 });
 
@@ -28,6 +22,9 @@ $("#headerMenuSociety").click(function() {
     }, 800);
 });
 
+$("#moonProgressDescription1").html("June 25th " + (n - 6) + "<br><b>0%</b> tarp coverage<br><b>100%</b> visibility");
+$("#moonProgressDescription2").html("March 18th " + (n - 3) + "<br><b>8%</b> tarp coverage<br><b>92%</b> visibility");
+$("#moonProgressDescription3").html("December 3rd " + (n - 1) + "<br><b>23%</b> tarp coverage<br><b>77%</b> visibility");
 
 // Myth debunking
 $("tr").click(function(){

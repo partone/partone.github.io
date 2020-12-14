@@ -194,12 +194,65 @@ li {
   margin-bottom: 20px;
 }
 
-#countdownSection * {
+.darkFont * {
   color: #060e4f;
 }
 
 #countdown {
   margin-top: 0px;
+}
+
+/* Before after */
+
+#beforeAfterImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moonProgress {
+  width: 33.33333%;
+}
+
+.moonProgressImage {
+  width: 100%;
+}
+
+.moonProgressImageContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.moonProgressDescription {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  font-weight: 400;
+}
+
+.moonProgressDescription b {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+}
+
+/* Take Action */
+
+#takeAction .sectionTitle {
+  margin-top: 30px;
+}
+
+#takeActionActions {
+  text-align: center;
+  line-height: 30px;
+}
+
+#alliesList {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#alliesList * {
+  line-height: 40px;
+  font-size: 20px;
 }
 
 /* Fact Society */
@@ -229,7 +282,7 @@ li {
 }
 
 #factSociety * {
-  color: black;
+ /* color: black; */
 }
 
 #factSociety .sectionDescriptionLarge {
