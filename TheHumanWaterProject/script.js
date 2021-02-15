@@ -7,6 +7,7 @@ for (i = 0; i < ideologiesSorted.length; i++) {
 }
 
 function toSecond() {
+    document.getElementById("beliefInput").focus();
     $("#firstView").fadeOut("fast");
     $("#secondView").fadeIn("fast");
     $("#beliefInput").focus();
