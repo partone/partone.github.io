@@ -1,9 +1,9 @@
 
 
 const ideologies = [
-    ["Christianity", `> A woman from Samaria came to draw *water*. Jesus said to her, “Give me a drink.”\n\n` + `John 4:7\n\nIn this verse of the Bible, it is made evident that water is not only present on Earth, but a substance to be drunk.\n\nThe Bible makes reference to water on hundreds of separate occassions throughout the Old and New Testament both literally and metaphorically.`],
-    ["Anarchism", `
-    `],
+    ["Christianity", `> A woman from Samaria came to draw *water*. Jesus said to her, “Give me a drink.”\n\n` + `John 4:7\n\nIn [this verse](https://biblehub.com/john/4-7.htm) of the Bible, it is made evident that water is not only present on Earth, but a substance to be drunk.\n\nThe Bible makes reference to water on hundreds of separate occassions throughout the Old and New Testament both literally and metaphorically.`],
+
+    ["Anarchism", `> *Water*, air, and light are common things, not because they are inexhaustible, but because they are indispensable; and so indispensable that for that very reason Nature has created them in quantities almost infinite, in order that their plentifulness might prevent their appropriation.\n\n` + `Excerpt from "What is Property" by Pierre-Joseph Proudhon\n\nPierre-Joseph Proudhon, the [first self-described anarchist](https://en.wikipedia.org/wiki/Pierre-Joseph_Proudhon), describes water as being one of the many commonly occuring natural things in our world.  To list it alongside such fundamental matter such as air or light suggests that water's existence plays an important role in anarchist thought.\n\nWe understand that anarchism is an ideology composed of many texts written by many thinkers, accordingly we suggest you revise your preferred text for references to water.`],
 
     ["Zoroastrianism", `> One says in the Scripture, “These several springs of *waters* which are called lakes have come into appearance, similar to the eyes of men they are the eye lets of *waters*; such as Lake Chechast, Lake Sobar, Lake Khvairizem, Lake Frazdan, Lake Zaromand, Lake Asvast, Lake Husrub, Lake Sataves, Lake Urvis.\n\n` + `Bundahishn, Chapter XII\n\nThis translated chapter of the Avesta offers not only several references to water as a substance, but also describes how it can be found in multiple lakes.  Further evidence can be found in [Zoroaster's description of the four elements](http://acshist.scs.illinois.edu/bulletin_open_access/v25-2/v25-2%20p109-115.pdf), water being one of them.`],
 
@@ -11,26 +11,26 @@ const ideologies = [
 
     ["Islam", `> وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً بِقَدَرٍ فَأَسْكَنَّاهُ فِي الْأَرْضِ ۖ وَإِنَّا عَلَىٰ ذَهَابٍ بِهِ لَقَادِرُونَ\n\n` + `Qur'an 23:81\n\nIn [this passage](https://www.quranwow.com/#/ch/23/t1/ar-allah/t2/en-itania/a1/alafasy-64/a2/itania-48-b/v/18), The Holy Qur'an describes Allah's actions in placing water on Earth, both confirming its creation and its accessibility to people on Earth.  The word "water" appears [63 times](https://www.ecomena.org/water-islam) in the Quran.`],
 
-    ["Hinduism", `> I am the taste in *water*, O son of Kunti, and the radiance of the sun and the moon. I am the sacred syllable Om in the Vedic mantras; I am the sound in ether, and the ability in humans.\n\n` + `Bhagavad Gita: Chapter 7, Verse 8\n\nWater only appears once in the Bhagavad Gita, but it is Krishna who acknowledges its presence and universality.\n\nThe Bhagavad Gita is just one scripture in a diverse world of Hindu scripture, so we invite you to find references to, or appearances of, water in the text most relevant to you.`],
+    ["Hinduism", `> I am the taste in *water*, O son of Kunti, and the radiance of the sun and the moon. I am the sacred syllable Om in the Vedic mantras; I am the sound in ether, and the ability in humans.\n\n` + `Bhagavad Gita: Chapter 7, Verse 8\n\nWater only appears [once](https://www.holy-bhagavad-gita.org/chapter/7/verse/8) in the Bhagavad Gita, but it is Krishna who acknowledges its presence and universality.\n\nThe Bhagavad Gita is just one scripture in a diverse world of Hindu scripture, so we invite you to find references to, or appearances of, water in the text most relevant to you.`],
 
-    ["Buddhism", `> Think not lightly of evil, saying, "It will not come to me." Drop by drop is the *water* pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.\n\n` + `Papavagga: Evil\n\nIt is directly from the Tripitaka that we find evil is used as a metaphor to define water.  From this description we can ascertain that water is a liquid that can be used to fill a pot, which is in-line with our modern interpretation of water.`],
+    ["Buddhism", `> Think not lightly of evil, saying, "It will not come to me." Drop by drop is the *water* pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.\n\n` + `Papavagga: Evil\n\nIt is directly from the [Tripitaka](http://www.buddhanet.net/e-learning/buddhism/dp09.htm) that we find evil is used as a metaphor to define water.  From this description we can ascertain that water is a liquid that can be used to fill a pot, which is in-line with our modern interpretation of water.`],
 
     ["Taoism", `>
     Nothing in the world
     is as soft and yielding as *water*.
     Yet for dissolving the hard and inflexible,
-    nothing can surpass it.\n\n` + `Tao Te Ching, 78\n\nThis passage of the Tao Te Ching references water in a way that allows us to know of its existence, and also understand its properties as a liquid.`],
+    nothing can surpass it.\n\n` + `Tao Te Ching, 78\n\n[This passage](https://www.wussu.com/laotzu/laotzu78.html) of the Tao Te Ching references water in a way that allows us to know of its existence, and also understand its properties as a liquid.`],
 
     ["Sikhism", `>
     When the hands and the feet and the body are dirty,
-    *water* can wash away the dirt.\n\n` + `Guru Granth Sahib, Page 4\n\nGuru Granth Sahib gives us this insightful reflection on dirt and how water can be used to remove it from surfaces, thereby confirming the existence of water.  Guru Granth Sahib goes on to discuss the holy origin of water on Earth`],
+    *water* can wash away the dirt.\n\n` + `Guru Granth Sahib, Page 4\n\nGuru Granth Sahib gives us [this insightful reflection](http://www.srigurugranth.org/0004.html) on dirt and how water can be used to remove it from surfaces, thereby confirming the existence of water.  Guru Granth Sahib goes on to discuss the holy origin of water on Earth`],
 
-    ["Shinto", `>Then the eighty Deities spoke to the hare, saying: "What thou shouldest do is to bathe in the sea-*water* here, and lie on the slope of a high mountain exposed to the blowing of the wind." So the hare followed the instructions of the eighty Deities, and lay down.\n\n` + `The Kojiki, Section XXI — The White Hare of Inaba\n\nThe Kojiki has many references to water, one of our favourites is when the Deities of Deity Master-of-the-Great-Land stumbled upon a hare at Cape Keta.  They confirm the existence of water as a substance that is related to the sea, likely what we have coined as "seawater" in modern times.`],
+    ["Shinto", `>Then the eighty Deities spoke to the hare, saying: "What thou shouldest do is to bathe in the sea-*water* here, and lie on the slope of a high mountain exposed to the blowing of the wind." So the hare followed the instructions of the eighty Deities, and lay down.\n\n` + `The Kojiki, Section XXI — The White Hare of Inaba\n\nThe Kojiki has many references to water, one of our favourites occurs when the [Deities of Deity Master-of-the-Great-Land stumbled upon a hare at Cape Keta](https://www.sacred-texts.com/shi/kj/kj028.htm).  They confirm the existence of water as a substance that is related to the sea, likely what we have coined as "seawater" in modern times.`],
 
     ["Falun Gong", `> \n\n` + `\n\n`],
     ["Judaism", `> \n\n` + `\n\n`],
 
-    ["Confucianism", `> First, of the five elements - The first is *water*; the second is fire; the third, wood; the fourth, metal; and the fifth, earth. (The nature of) *water* is to soak and descend\n\n` + `Passage from part five of The Shu Ching\n\nFrom the first of the Five Classics comes this world-defining passage that positions water's role as one of the five elements.  Hereafter, water is referenced by Confucius, but also in various symbolic ways to represent flexibility but also force`],
+    ["Confucianism", `> First, of the five elements - The first is *water*; the second is fire; the third, wood; the fourth, metal; and the fifth, earth. (The nature of) *water* is to soak and descend\n\n` + `Passage from part five of The Shu Ching\n\nFrom the [first of the Five Classics](https://www.sacred-texts.com/cfu/sbe03/index.htm) comes this world-defining passage that positions water's role as one of the five elements.  Hereafter, water is referenced by Confucius, but also in various symbolic ways to represent flexibility but also force`],
 
     ["Caodaism", `> \n\n` + `\n\n`],
     ["Baháʼí Faith", `> \n\n` + `\n\n`],

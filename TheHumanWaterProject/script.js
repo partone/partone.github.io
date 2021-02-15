@@ -15,6 +15,8 @@ function toSecond() {
 
 function thirdToSecond() {
     document.getElementById("beliefInput").value = "";
+    $("#backdrop").css("background", "rgba(0, 0, 0, 0.8)");
+    $("body, html").removeClass("scrollFlow");
     $(".belief").hide();
     $("#thirdView").fadeOut("fast");
     $("#secondView").fadeIn("fast");
@@ -23,6 +25,8 @@ function thirdToSecond() {
 
 $(".belief").click(function(e) {
     $("#beliefTitle").text($(e.target).text());
+    $("#backdrop").css("background", "#111");
+    $("body, html").addClass("scrollFlow");
     $("#proofOfWater").html(markdown(ideologies.find(x => x[0] === $(e.target).text())[1]))
     $("#secondView").fadeOut("fast");
     $("#thirdView").fadeIn("fast");

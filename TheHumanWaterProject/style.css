@@ -7,6 +7,14 @@ html, body {
   overflow: hidden;
 }
 
+body {
+  background: rgb(150, 150, 150);
+}
+
+.scrollFlow {
+  overflow-y: scroll !important;
+}
+
 hr {
   width: 50%;
   display: none;
@@ -24,9 +32,9 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   color: #f1f1f1;
-  height: 100%;
+  min-height: 100%;
   width: 100vw;
 }
 
@@ -243,10 +251,6 @@ blockquote + p, blockquote + code + p {
     font-size: 32px;
     margin-top: 0;
   }
-
-  #backdrop {
-    background: rgba(0, 0, 0, 0.8);
-  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -256,10 +260,11 @@ blockquote + p, blockquote + code + p {
 
   #backdrop {
     height: auto;
+    min-height: 100vh;
   }
 
-  #backdrop, body {
-    background: #222;
+  #backdrop {
+    background: rgb(34, 34, 34);
   }
 
   #content {
