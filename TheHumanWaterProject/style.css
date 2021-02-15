@@ -83,6 +83,7 @@ hr {
 
 .subtitle b {
   font-weight: 700;
+  color: #c345f5;
 }
 
 #firstToSecond {
@@ -190,6 +191,10 @@ blockquote {
   padding-right: 24px;
   margin-bottom: 14px;
   text-align: right;
+}
+
+#proofOfWater strong {
+  color: #c345f5;
 }
 
 blockquote em {
