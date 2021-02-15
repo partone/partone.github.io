@@ -192,6 +192,7 @@ blockquote em {
 #return {
   text-decoration: underline;
   font-weight: 900;
+  cursor: pointer;
 }
 
 /* Quote attribution */
