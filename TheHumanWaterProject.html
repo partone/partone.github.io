@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Human Water Project</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="TheHumanWaterProject/style.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="TheHumanWaterProject/rain.mp4" type="video/mp4">
+  </video>
+
+  <div id="backdrop">
+    <div id="content">
+      <div id="firstView" class="view">
+        <div id="title" class="largeFont">The Fact Society invites you to learn - <b>your way</b></div>
+        <div class="subtitle">1. <b>Water scarcity</b> is the greatest threat facing this generation. <br>2. Many of us feel that
+          we are being forced into systems of thought that don't align with our beliefs.
+        </div>
+        <div class="subtitle">
+          <b>The Human Water Project</b> has set a mission to unite these two facts
+          and prove the existence of water to peoples of all creeds, faiths, and ethnicities, so that we may unite against
+          the menace of water scarcity.</div>
+        <div id="flexboxForLuis" onClick="toSecond()">
+          <div id="firstToSecond"><b>Learn more</b></div><span id="nextGlyph" class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+      </div>
+
+      <div id="secondView" class="view">
+        <div id="beliefDropdown" class="dropdown-content">
+          <div id="inputBox">
+            <input type="text" placeholder="Input your belief... (ex. Confucianism)" id="beliefInput"
+              onkeyup="filterFunction()">
+          </div>
+          <div id="beliefsList">
+          </div>
+        </div>
+      </div>
+
+      <div id="thirdView" class="view">
+        <div id="beliefTitle" class="largeFont"></div>
+        <hr>
+        <div id="proofOfWater" class="subtitle"></div>
+        <div id="return" onClick="thirdToSecond()">Back to belief search</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="TheHumanWaterProject/drawdown.js"></script>
+<script src="TheHumanWaterProject/ideology.js"></script>
+<script src="TheHumanWaterProject/script.js"></script>
+</html>

@@ -1,0 +1,342 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: default;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+hr {
+  width: 50%;
+  display: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  height: 100%;
+  width: 100vw;
+}
+
+#content {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  margin-top: 25vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.view {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.largeFont {
+  font-size: 60px;
+}
+
+/* First view */
+
+#firstView {
+  /*display: none;*/
+}
+
+#title {
+  font-family: 'Sansita Swashed', cursive;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#title b {
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 700;
+  color: #c345f5;
+}
+
+.subtitle {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.subtitle b {
+  font-weight: 700;
+}
+
+#firstToSecond {
+  font-size: 36px;
+}
+
+#nextGlyph {
+  font-size: 38px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+#flexboxForLuis {
+  display: flex;
+  cursor: pointer;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 240px;
+  padding: 10px;
+  -webkit-transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+#flexboxForLuis:hover {
+  background:rgba(179, 65, 224,0.5);
+}
+
+#flexboxForLuis * {
+  cursor: pointer;
+}
+
+/* Second view */
+
+#secondView {
+  display: none;
+}
+
+#beliefDropdown * {
+  font-size: 28px;
+}
+
+#beliefDropdown {
+  width: 100%;
+  border-radius: 50px;
+}
+
+#inputBox {
+  width: 100%;
+}
+
+#beliefInput {
+  cursor: text;
+}
+
+#beliefInput, .belief {
+  width: 100%;
+  padding: 20px;
+}
+
+.belief {
+  background: rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+  -webkit-transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+.belief:hover {
+  background: rgba(179, 65, 224, 0.5);
+}
+
+/* Third view */
+
+#thirdView {
+  display: none;
+}
+
+#beliefTitle {
+  font-family: 'Sansita Swashed', cursive;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+#proofOfWater {
+  padding-left: 16px;
+}
+
+#proofOfWater p a {
+  color: white;
+  cursor: pointer;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 24px;
+  border-right: 6px white solid;
+  padding-right: 24px;
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+blockquote em {
+  color: #c345f5;
+  font-weight: 900;
+}
+
+#return {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+/* Quote attribution */
+blockquote + p, blockquote + code + p {
+  font-size: 24px;
+  padding-right: 120px;
+  text-align: right;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1370px) {
+  #content {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    margin-top: 15vh;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .largeFont {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  blockquote {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+
+  blockquote + p, blockquote + code + p {
+    font-size: 20px;
+  }
+
+  #flexboxForLuis {
+    width: 180px;
+    margin-top: 20px;
+  }
+
+  #firstToSecond {
+    font-size: 28px;
+  }
+
+  #nextGlyph {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  #backdrop {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html, body {
+    overflow: scroll;
+  }
+
+  #backdrop {
+    height: auto;
+  }
+
+  #backdrop, body {
+    background: #222;
+  }
+
+  #content {
+    height: 100%;
+    width: 85%;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+
+  .largeFont {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #myVideo {
+    display: none;
+  }
+
+  #nextGlyph {
+    font-size: 20px;
+    margin-top: 2px;
+  }
+
+  #beliefTitle {
+    margin-bottom: 15px;
+  }
+
+  #beliefDropdown * {
+    font-size: 16px;
+  }
+
+  #beliefInput, .belief {
+    width: 90%;
+    padding: 5%;
+  }
+
+  #firstToSecond {
+    font-size: 20px;
+  }
+
+  #flexboxForLuis {
+    width: 130px;
+  }
+
+  blockquote {
+    font-style: italic;
+    font-size: 14px;
+    border-right: 3px white solid;
+    line-height: 18px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 12px;
+    border: none;
+    text-align: center;
+  }
+
+  blockquote + p, blockquote + code + p {
+    font-size: 14px;
+    margin-top: -5px;
+    margin-right: 50px;
+    padding-right: 0px;
+  }
+
+  hr {
+    display: default;
+  }
+
+  #return {
+    text-align: center;
+    font-size: 14px;
+  }
+}

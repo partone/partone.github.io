@@ -1,0 +1,52 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#header, #headerLogo {
+    width: 100%;
+}
+
+#headerLogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+#opEdTopTitle {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 30px;
+    color: #777;
+    margin-top: 40px;
+}
+
+#opEdTitle {
+    text-align: left;
+    font-family: 'Imbue', serif;
+    font-size: 100px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+#opEdAuthour {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.opEdBody {
+    font-size: 20px;
+
+}
