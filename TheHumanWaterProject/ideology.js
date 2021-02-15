@@ -25,10 +25,13 @@ const ideologies = [
     When the hands and the feet and the body are dirty,
     *water* can wash away the dirt.\n\n` + `Guru Granth Sahib, Page 4\n\nGuru Granth Sahib gives us this insightful reflection on dirt and how water can be used to remove it from surfaces, thereby confirming the existence of water.  Guru Granth Sahib goes on to discuss the holy origin of water on Earth`],
 
-    ["Shinto", `> \n\n` + `\n\n`],
+    ["Shinto", `>Then the eighty Deities spoke to the hare, saying: "What thou shouldest do is to bathe in the sea-*water* here, and lie on the slope of a high mountain exposed to the blowing of the wind." So the hare followed the instructions of the eighty Deities, and lay down.\n\n` + `The Kojiki, Section XXI — The White Hare of Inaba\n\nThe Kojiki has many references to water, one of our favourites is when the Deities of Deity Master-of-the-Great-Land stumbled upon a hare at Cape Keta.  They confirm the existence of water as a substance that is related to the sea, likely what we have coined as "seawater" in modern times.`],
+
     ["Falun Gong", `> \n\n` + `\n\n`],
     ["Judaism", `> \n\n` + `\n\n`],
+
     ["Confucianism", `> First, of the five elements - The first is *water*; the second is fire; the third, wood; the fourth, metal; and the fifth, earth. (The nature of) *water* is to soak and descend\n\n` + `Passage from part five of The Shu Ching\n\nFrom the first of the Five Classics comes this world-defining passage that positions water's role as one of the five elements.  Hereafter, water is referenced by Confucius, but also in various symbolic ways to represent flexibility but also force`],
+
     ["Caodaism", `> \n\n` + `\n\n`],
     ["Baháʼí Faith", `> \n\n` + `\n\n`],
     ["Jainism", `> \n\n` + `\n\n`],
