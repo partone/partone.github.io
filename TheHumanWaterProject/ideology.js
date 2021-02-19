@@ -42,7 +42,7 @@ const ideologies = [
     Children, watch Me step.
     Hieu, bring Me some *water*.\n\n` + `Cao Đài Tiên Ông Đại Bồ Tát Ma Ha Tát, Teaching the Great Way to the Southern Quarter\n\nIn this small excerpt from [The Collection of Divine Messages](https://anyflip.com/uisu/jyaf/basic), The Jade Emperor requests an otherwise unmentioned character, Hieu, to bring Him water.  Thus confirming that the existence of water does not conflict with the Caodaist faith.`],
 
-    ["Baháʼí Faith", `> \n\n` + `\n\n`],
+    ["Baháʼí Faith", `> When **water** flows from the summit of a mountain and falls to the valley, it creates energy.\n\n` + `The Revelation of Bahá'u'lláh, Volume 1, Chapter 9\n\nIn [this brief nugget of wisdom](https://d9263461.github.io/cl/Baha'i/Others/ROB/V1/p105-152Ch09.html), Baháʼu'lláh recognises water and also implies that it has properties similar to what it scientifically believed to be liquid water.`],
 
     ["Jainism", `> \n\n` + `\n\n`],
     ["Cheondoism", `> \n\n` + `\n\n`],
@@ -100,14 +100,17 @@ const ideologies = [
     ["Zapatista", `> \n\n` + `\n\n`],
     ["Agrarian communism", `> \n\n` + `\n\n`],
     ["Constitutional monarchism", `> \n\n` + `\n\n`],
-    ["Veganism", `> \n\n` + `\n\n`],
+
+    ["Veganism", `> The cost of buying **water** from a machine is dirt cheap compared to bottled **water**, but it’s still much more expensive than owning a reverse osmosis unit, where the cost works out to only pennies a gallon.\n\n` + `Chapter 23, The Ultimate Vegan Guide, vegan.com\n\nMany Vegan texts gloss over the concept of water.  Thankfully, vegan.com's [The Ultimate Vegan Guide](https://vegan.com/chap23/) dedicates a generous section to describing water and the various ways it can be acquired for consumption.  If you are a vegan, we recommend you experiment with your own diet and see for yourself whether you are consuming water or not - you will most likely encouter it.`],
+
     ["Vegetarianism", `> \n\n` + `\n\n`],
     ["Pescetarianism", `> \n\n` + `\n\n`],
     ["Neo-feudalism", `> \n\n` + `\n\n`],
 
     ["Feudalism", `Feudalism (not to be confused with neo-feudalism) is an ideology with no defining text or doctrine, and thus proving the existence of water within this ideology poses a large challenge.  However, through manuscripts and records from Medieval Europe, The Human Water Project has established with certainty that water did play a role in the feudal system.\n\nThe Gotha Manuscript describes and illustrates [Holy Roman Emperor Fredrick I's death from excessive exposure to **water**](TheHumanWaterProject/images/FredrickWithWater.jpg) (drowining) on June 10th, 1190.  The existence of water also affected the common classes as illustrated in a French manuscript dating from around 1270 that [portrays two fishermen riding a boat atop **water** than contains a fish](TheHumanWaterProject/images/PlebsWithWater.jpg).  It is important to clarify that these two examples are not exhaustive; there are innumerous manuscripts from Medieval Europe depicting water in different situations across all levels of the feudal system.\n\nGiven that water existed in both the highest and lowest strata of the feudal system, we can infer that the middle classes also lived with its presence.  This evidence can be compounded into confirmation that belief in water does not intefere with, and is practically confirmed by, feudalist belief.`],
 
-    ["Bonapartism", `> \n\n` + `\n\n`],
+    ["Bonapartism", `> **Water**, air, and cleanness are the chief articles in my pharmacy.\n\n` + `Napoleon Bonaparte\n\nL'Empereur himself is attributed with this quote that so clearly indicated the existence and importance of water to Napoleon.  Napoleon championed belief in water by [modernising Paris' water system](https://en.wikipedia.org/wiki/Paris_under_Napoleon#Water), going so far as to [create his own fresh water supply in the form of a canal](https://en.wikipedia.org/wiki/Paris_under_Napoleon#Health_and_sickness).`],
+
     ["Bismarkianism", `> \n\n` + `\n\n`],
     ["Neo-liberalism", `> \n\n` + `\n\n`],
     ["Neo-corporatism", `> \n\n` + `\n\n`],
@@ -129,7 +132,8 @@ const ideologies = [
 
     ["Zionism", `Due to the **The Fact Society**'s strict policy of non-interventionism in the Israeli–Palestinian conflict (1965-present), we are unable to provide evidence for the existence of water within this ideology at the current time.\n\nBe sure to check back when the conflict resolves!`],
 
-    ["Pan-Africanism", `> \n\n` + `\n\n`],
+    ["Pan-Africanism", `> ...In the same vein, the African Union, through a number of decisions and declarations made by the heads of states and governments, has always put **water** resource management (WRM) and irrigation on the front burner of its development agenda\n\n` + `Framework for Irrigation Development and Agricultural Water Management in Africa, The African Union\n\nThe African Union's [Framework for Irrigation Development and Agricultural Water Management in Africa](https://au.int/sites/default/files/documents/38632-doc-framework_for_irrigation_development_english.pdf) is a tour de force of water scripture.\n\nIt goes into great detail to describe what water is, how its used, and where it is found in Africa; furthermore, it stresses the common need of all Africans to have access to water.  No greater emphasis could be made on the existence of water in the Pan-African movement.`],
+
     ["National populism", `> \n\n` + `\n\n`],
     ["Progressivism", `> \n\n` + `\n\n`],
     ["Freemasonry", `> \n\n` + `\n\n`],
