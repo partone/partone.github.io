@@ -44,14 +44,25 @@ const ideologies = [
 
     ["Baháʼí Faith", `> When **water** flows from the summit of a mountain and falls to the valley, it creates energy.\n\n` + `The Revelation of Bahá'u'lláh, Volume 1, Chapter 9\n\nIn [this brief nugget of wisdom](https://d9263461.github.io/cl/Baha'i/Others/ROB/V1/p105-152Ch09.html), Baháʼu'lláh recognises water and also implies that it has properties similar to what it scientifically believed to be liquid water.`],
 
-    ["Jainism", `> \n\n` + `\n\n`],
-    ["Cheondoism", `> \n\n` + `\n\n`],
-    ["Hoahaoism", `> \n\n` + `\n\n`],
-    ["Tenriism", `> \n\n` + `\n\n`],
-    ["Catholicism", `> \n\n` + `\n\n`],
-    ["Protestantism", `> \n\n` + `\n\n`],
-    ["Neo-Buddhism", `> \n\n` + `\n\n`],
-    ["Science", `> \n\n` + `\n\n`],
+    ["Jainism", `> Thus I say: a lake is full of *water*, it is in an even plain, it is free from dust, it harbours (many fish).\n\n` + `Jaina Sutras, Book 1, Lecture 4, Lesson 5\n\nIn [this translation of Akaranga Sutra](https://www.sacred-texts.com/jai/sbe22/sbe2224.htm) it is said that water is the substance that a hypothetical lake is filled with.  Observing lakes in modern times, we can come to the conclusion that the ancient Jina believed in the existance of the same water that we perceive to exist today.`],
+
+    ["Hoahaoism",  `> Think not lightly of evil, saying, "It will not come to me." Drop by drop is the *water* pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.\n\n` + `Papavagga: Evil\n\nWhile Haohaoism has no particular scripture, we can still refer to the Buddha's words and it is directly from the [Tripitaka](http://www.buddhanet.net/e-learning/buddhism/dp09.htm) that we find evil is used as a metaphor to define water.  From this description we can ascertain that water is a liquid that can be used to fill a pot, which is in-line with our modern interpretation of water.`],
+
+    ["Tenriism", `> I shall go into the *water* in the mountains and make it clear, whatever kind of *water* it may be.\n\n` + `Ofudesaki, Verse 25\n\nOyagami, [through these powerful words](http://tenrikyology.com/4659/ofudesaki-part-2-verses-25-47/), metaphorises the cleaning of the mind as the water of a mountain may be cleaned.  No follower of Tenrikyō can deny the existence of water.`],
+
+    ["Tenrikyō", `> I shall go into the *water* in the mountains and make it clear, whatever kind of *water* it may be.\n\n` + `Ofudesaki, Verse 25\n\nOyagami, [through these powerful words](http://tenrikyology.com/4659/ofudesaki-part-2-verses-25-47/), metaphorises the cleaning of the mind as the water of a mountain may be cleaned.  No follower of Tenrikyō can deny the existence of water.`],
+
+    ["Catholicism", `>
+    Shortly before dawn Jesus went out to them, walking on the lake.
+    When the disciples saw him walking on the lake, they were terrified.
+    “It’s a ghost,” they said, and cried out in fear.
+    But Jesus immediately said to them: “Take courage! It is I. Don’t be afraid.”
+    “Lord, if it’s you,” Peter replied, “tell me to come to you on the *water*.”\n\n` + `Matthew 14:25-28\n\nOne of [Jesus' most renowned miracles](https://www.biblegateway.com/passage/?search=Matthew%2014%3A22-33&version=NIV) was when he walked on water, and invited his disciples to do the same.  This is symbolically important to Catholics because it displays the power that God grants to those who put their faith in Him.  Beyond symbolism, it is also important passage as Jesus demonstrates the existence of water to his disciples, and to all followers of the Catholic faith.`],
+
+    ["Protestantism", `> In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the *waters*.\n\n` + `Genesis 1:1-2\n\nThe Bible is one of the most water-oriented scriptures of any belief, going so far as to mention water within the [first two sentences of the Old Testament](https://www.biblegateway.com/passage/?search=Genesis%201&version=NIV).  This passage goes beyond confirming the contemporary existence of water by confirming its existence since the beginning of Earthly existence itself.`],
+
+    ["Science", `> Because I had pneumonia last year, it would not be wise for me to have a bucket of cold *water* poured over me\n\n` + `Stephen Hawking\n\nScience is all about exploration and imagination, and few scientists have encouraged us to explore and imagine more that the late Stephen Hawking.  Stephen Hawking inadvertently confirmed the existence of water in a [video for Time Magazine](https://time.com/3206976/als-ice-bucket-challenge-stephen-hawking-video/) featuring the widely popular ALS Ice Bucket Challenge, consequently giving a strong indication to the scientific community that water exists and is present in the universe.`],
+
     ["Atheism", `> \n\n` + `\n\n`],
     ["Secular humanism", `> \n\n` + `\n\n`],
     ["Feminism", `> \n\n` + `\n\n`],

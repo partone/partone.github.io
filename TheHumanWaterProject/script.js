@@ -1,10 +1,13 @@
 // Populate dropdown
 const ideologiesSorted = ideologies.sort((a, b) => a[0].localeCompare(b[0]));
+let proven = 0;
 for (i = 0; i < ideologiesSorted.length; i++) {
     if (ideologiesSorted[i][1] != `> \n\n` + `\n\n`) {
+        proven++;
         $('#beliefsList').append('<div class="belief" style="display:none">' + ideologiesSorted[i][0] + '</div>');
     }
 }
+console.log("Proven " + proven + " of " + ideologies.length + " beliefs");
 
 function toSecond() {
     document.getElementById("beliefInput").focus();
