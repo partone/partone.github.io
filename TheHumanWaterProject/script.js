@@ -35,7 +35,6 @@ $(".belief").click(function (e) {
     $("body, html").addClass("scrollFlow");
     $("#proofOfWater").html(markdown(ideologies.find(x => x[0] === $(e.target).text())[1]))
     $("#secondView").fadeOut("fast", function () { $("#thirdView").fadeIn("fast"); });
-
 });
 
 function filterFunction() {
@@ -45,7 +44,9 @@ function filterFunction() {
     div = document.getElementById("myDropdown");
     a = document.getElementsByClassName("belief");
     displayed = 0;
+    $("#beliefInput").removeClass("noBeliefFound");
     $(".belief").hide();
+    $("#noResults").hide();
     if (filter === "") {
         return;
     }
@@ -61,5 +62,9 @@ function filterFunction() {
         } else {
             a[i].style.display = "none";
         }
+    }
+    if(!displayed) {
+        $("#beliefInput").addClass("noBeliefFound");
+        $("#noResults").show();
     }
 }

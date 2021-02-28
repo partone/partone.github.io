@@ -20,6 +20,10 @@ hr {
   display: none;
 }
 
+input:focus {
+  outline-width: 0;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -43,6 +47,7 @@ hr {
   width: 60%;
   position: relative;
   margin-top: 25vh;
+  margin-bottom: 25vh;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -144,6 +149,27 @@ hr {
   cursor: text;
 }
 
+.noBeliefFound {
+  border: 4px #c72c2c solid;
+  box-shadow: 0px 0px 15px 2px #c72c2c;
+}
+
+#noResults {
+  position: absolute;
+  top: 0;
+  padding: 24px;
+  text-align: right;
+  width: 100%;
+  pointer-events: none;
+  font-weight: 900;
+  display: none;
+}
+
+#noResults mark {
+  color: #c72c2c;
+  background-color: white;
+}
+
 #beliefInput, .belief {
   width: 100%;
   padding: 20px;
@@ -214,6 +240,19 @@ blockquote + p, blockquote + code + p {
   padding-right: 120px;
   text-align: right;
   margin-top: 0;
+}
+
+#returnMobile {
+  background-color: #222;
+  padding-top: 15px;
+  display: none;
+  padding-bottom: 15px;
+  position: fixed;
+  font-weight: 700;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1370px) {
@@ -360,5 +399,28 @@ blockquote + p, blockquote + code + p {
   #return {
     text-align: center;
     font-size: 14px;
+  }
+
+  #proofOfWater {
+    padding-left: 0px;
+  }
+
+  #return {
+    display: none;
+  }
+
+  #returnMobile {
+    display: block;
+  }
+
+  #content {
+    margin-bottom: 60px;
+  }
+
+  #noResults {
+    padding: 0;
+    padding-top: 5%;
+    right: 5px;
+    border: 4px solid rgba(0,0,0,0);
   }
 }
