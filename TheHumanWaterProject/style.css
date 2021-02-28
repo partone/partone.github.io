@@ -24,6 +24,14 @@ input:focus {
   outline-width: 0;
 }
 
+#powerSource {
+  bottom: 10px;
+  left: 10px;
+  position: fixed;
+  color: white;
+  font-size: 12px;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -252,6 +260,7 @@ blockquote + p, blockquote + code + p {
   text-align: center;
   left: 0;
   bottom: 0;
+  z-index: 1;
   width: 100%;
 }
 
