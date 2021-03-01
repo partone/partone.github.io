@@ -1,7 +1,3 @@
-
-// Hide translation image
-$("#nonEnglishContainer").hide();
-
 // All links new tab
 $("a").attr("target", "_blank");
 

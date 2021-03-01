@@ -57,7 +57,10 @@
       </div>
     </div>
   </div>
-  <div id="translate" onClick="$('#nonEnglishContainer').fadeIn()">English (UK)<span class="glyphicon glyphicon-globe" id="translateGlyph"></span></div>
+  <div id="translate" onClick="$('#nonEnglishContainer').css({
+    opacity: 0,
+    display: 'grid'
+}).animate({opacity:1},600);">English (UK)<span class="glyphicon glyphicon-globe" id="translateGlyph"></span></div>
   <div id="nonEnglishContainer" onClick="$('#nonEnglishContainer').fadeOut()">
     <div id="nonEnglishImageContainer">
       <img id="nonEnglishImage" src="TheHumanWaterProject/images/NonEnglish.jpg" alt="Image didn't load :(">
