@@ -11,7 +11,7 @@ const ideologies = [
 
     ["Islam", `> وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً بِقَدَرٍ فَأَسْكَنَّاهُ فِي الْأَرْضِ ۖ وَإِنَّا عَلَىٰ ذَهَابٍ بِهِ لَقَادِرُونَ\n\n` + `Qur'an 23:81\n\nIn [this passage](https://www.quranwow.com/#/ch/23/t1/ar-allah/t2/en-itania/a1/alafasy-64/a2/itania-48-b/v/18), The Holy Qur'an describes Allah's actions in placing water on Earth, both confirming its creation and its accessibility to people on Earth.  The word "water" appears [63 times](https://www.ecomena.org/water-islam) in the Quran.`],
 
-    ["Hinduism", `> I am the taste in *water*, O son of Kunti, and the radiance of the sun and the moon. I am the sacred syllable Om in the Vedic mantras; I am the sound in ether, and the ability in humans.\n\n` + `Bhagavad Gita: Chapter 7, Verse 8\n\nWater only appears [once](https://www.holy-bhagavad-gita.org/chapter/7/verse/8) in the Bhagavad Gita, but it is Krishna who acknowledges its presence and universality.\n\nThe Bhagavad Gita is just one scripture in a diverse world of Hindu scripture, so we invite you to find references to, or appearances of, water in the text most relevant to you.`],
+    ["Hinduism", `> I am the taste in *water*, O son of Kunti, and the radiance of the sun and the moon. I am the sacred syllable Om in the Vedic mantras; I am the sound in ether, and the ability in humans.\n\n` + `Bhagavad Gita: Chapter 7, Verse 8\n\nWater only appears [once](https://www.holy-bhagavad-gita.org/chapter/7/verse/8) in the Bhagavad Gita, but it is Krishna who acknowledges its presence and universality which gives a large amount of legitimacy to its existence for followers of the Hindu faith.\n\nThe Bhagavad Gita is just one scripture in a diverse world of Hindu scripture, so we invite you to find references to, or appearances of, water in the text most relevant to you.`],
 
     ["Buddhism", `> Think not lightly of evil, saying, "It will not come to me." Drop by drop is the *water* pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.\n\n` + `Papavagga: Evil\n\nIt is directly from the [Tripitaka](http://www.buddhanet.net/e-learning/buddhism/dp09.htm) that we find evil is used as a metaphor to define water.  From this description we can ascertain that water is a liquid that can be used to fill a pot, which is in-line with our modern interpretation of water.`],
 
@@ -89,7 +89,7 @@ const ideologies = [
     ["Police state", `> \n\n` + `\n\n`],
     ["Totalitarianism", `> \n\n` + `\n\n`],
     ["Leninism", `> \n\n` + `\n\n`],
-    ["Maoism", `> \n\n` + `\n\n`],
+    ["Maoism", `> Even though you move every ship you have here, you cannot land. Ships have to be in the **water**, and cannot come to the land. \n\n` + `Mao Zedong, Fifteenth Meeting of the Supreme State Council, 1958\n\nMao is renowned for rarely addressing water in the literal sense, and more often used it in metaphor.  However, in his [speech to the Fifteenth Meeitng of the Supreme State Council](https://digitalarchive.wilsoncenter.org/document/117015.pdf?v=6924e04f4c5de2592277f85b06a1f718) on September 8th, 1958, he acknowledged that ships must be in water and also contextually implied that water separates Taiwan from Mainland China.  Furthermore, [he was pictured almost completely submerged in what appears to be water](TheHumanWaterProject/images/MaoWithWater.jpg) in 1966 during a swim in the Yangtze River`],
     ["Stalinism", `> \n\n` + `\n\n`],
     ["Trotskyism", `> \n\n` + `\n\n`],
     ["Juche", `> \n\n` + `\n\n`],

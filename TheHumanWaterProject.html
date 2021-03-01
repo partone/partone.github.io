@@ -57,8 +57,14 @@
       </div>
     </div>
   </div>
-
-  <div id="powerSource">Powered by the Fact Society</div>
+  <div id="translate" onClick="$('#nonEnglishContainer').fadeIn()">English (UK)<span class="glyphicon glyphicon-globe" id="translateGlyph"></span></div>
+  <div id="nonEnglishContainer" onClick="$('#nonEnglishContainer').fadeOut()">
+    <div id="nonEnglishImageContainer">
+      <img id="nonEnglishImage" src="TheHumanWaterProject/images/NonEnglish.jpg" alt="Image didn't load :(">
+    </div>
+    <span id="closeTranslation" class="glyphicon glyphicon-remove-circle"></span>
+  </div>
+  <div id="powerSource">Powered by The Fact Society</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="TheHumanWaterProject/drawdown.js"></script>

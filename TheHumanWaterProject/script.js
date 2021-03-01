@@ -1,3 +1,10 @@
+
+// Hide translation image
+$("#nonEnglishContainer").hide();
+
+// All links new tab
+$("a").attr("target", "_blank");
+
 // Populate dropdown
 const ideologiesSorted = ideologies.sort((a, b) => a[0].localeCompare(b[0]));
 let proven = 0;
