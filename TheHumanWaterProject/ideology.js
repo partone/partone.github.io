@@ -112,7 +112,7 @@ const ideologies = [
     ["Agrarian communism", `> \n\n` + `\n\n`],
     ["Constitutional monarchism", `> \n\n` + `\n\n`],
 
-    ["Veganism", `> The cost of buying **water** from a machine is dirt cheap compared to bottled **water**, but it’s still much more expensive than owning a reverse osmosis unit, where the cost works out to only pennies a gallon.\n\n` + `Chapter 23, The Ultimate Vegan Guide, vegan.com\n\nMany Vegan texts gloss over the concept of water.  Thankfully, vegan.com's [The Ultimate Vegan Guide](https://vegan.com/chap23/) dedicates a generous section to describing water and the various ways it can be acquired for consumption.  If you are a vegan, we recommend you experiment with your own diet and see for yourself whether you are consuming water or not - you will most likely encouter it.`],
+    ["Veganism", `> The cost of buying **water** from a machine is dirt cheap compared to bottled **water**, but it’s still much more expensive than owning a reverse osmosis unit, where the cost works out to only pennies a gallon.\n\n` + `Chapter 23, The Ultimate Vegan Guide, vegan.com\n\nMany Vegan texts gloss over the concept of water.  Thankfully, vegan.com's [The Ultimate Vegan Guide](https://vegan.com/chap23/) dedicates a generous section to describing water and the various ways it can be acquired for consumption.  If you are a vegan, we recommend you experiment with your own diet and see for yourself whether you are consuming water or not - you will most likely encounter it.`],
 
     ["Vegetarianism", `> \n\n` + `\n\n`],
     ["Pescetarianism", `> \n\n` + `\n\n`],
