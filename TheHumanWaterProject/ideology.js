@@ -63,7 +63,7 @@ const ideologies = [
 
     ["Science", `> Because I had pneumonia last year, it would not be wise for me to have a bucket of cold *water* poured over me\n\n` + `Stephen Hawking\n\nScience is all about exploration and imagination, and few scientists have encouraged us to explore and imagine more that the late Stephen Hawking.  Stephen Hawking inadvertently confirmed the existence of water in a [video for Time Magazine](https://time.com/3206976/als-ice-bucket-challenge-stephen-hawking-video/) featuring the widely popular ALS Ice Bucket Challenge, consequently giving a strong indication to the scientific community that water exists and is present in the universe.`],
 
-    ["Atheism", `> \n\n` + `\n\n`],
+    ["Atheism", `> For if I try to seize this self of which I feel sure, if I try to define and to summarize it, it is nothing but *water* slipping through my fingers.\n\n` + `Albert Camus\n\nWhile there is no official atheist doctrine, several notable atheist thinkers have, at times, alluded to the existence of water.  The allusion to water both in referene to religious scripture, but also presented through argument, has cemented its existence within most atheist thinkers realm of understanding.  Furthermore, important atheist thinkers such as [Richard Dawkins](TheHumanWaterProject/images/RichardDawkinsWithWater.jpg) have been depicted or pictured alongside water.`],
     ["Secular humanism", `> \n\n` + `\n\n`],
     ["Feminism", `> \n\n` + `\n\n`],
     ["Classical anarchism", `> \n\n` + `\n\n`],
