@@ -1,0 +1,71 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Logo section */
+
+#logoContainer {
+    height: 150px;
+    top: 35vh;
+    left: 5%;
+    right: 5%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#logoContainer img {
+    display: block;
+    width: 10%;
+}
+
+/* Header section */
+
+header, header i {
+    font-family: 'Libre Baskerville';
+    font-size: 45px;
+    text-align: right;
+    margin-top: 40vh;
+    margin-bottom: 100px;
+}
+
+header b {
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    color: white;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    transition: color 1s ease;
+}
+
+#headerContainer {
+    padding-left: 20%;
+    padding-right: 5%;
+}
+
+#learnMore {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    cursor: pointer;
+    position: absolute;
+    top: 50vh;
+    margin-left: 40%;
+    margin-right: 10%;
+    text-align: center;
+    text-decoration: underline;
+    transition: all 0.2s ease
+}
+
+#learnMore:hover {
+    color: black;
+}
