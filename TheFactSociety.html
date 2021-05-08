@@ -8,17 +8,48 @@
     <link rel="stylesheet" href="TheFactSociety/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div id="bigLine"></div>
     <div id="logoContainer">
         <img src="TheFactSociety/images/FactSocietySmall.png" alt="Fact Logo">
     </div>
     <div id="headerContainer">
-        <div id="learnMore">- Learn more -</div>
-        <header>The Fact Society beckons you forth to begin your journey <b>towards truly understanding knowledge.  The Fact Society is composed of a small group of investigators who seek to explore and analyse the world around us.  We understand that frequently data is confusing, evidence is contradictory, and the truth is hard to pin; therefore we have given ourselves the task of selecting the most controversial topics and placing them under a microscope to identify the <i>facts beyond the facts</i>.</b></header>
+        <div id="learnMoreOverlay">
+            <div id="learnMoreHiddenText">.</div>
+            <div id="learnMore">- Learn more -</div>
+        </div>
+        <header>The Fact Society beckons you forth to begin your journey <b>towards truly understanding knowledge. The
+                Fact Society is composed of a small group of investigators who seek to explore and analyse the world
+                around us. We understand that frequently data is confusing, evidence is contradictory, and the truth is
+                hard to pin; therefore we have given ourselves the task of selecting the most controversial topics and
+                placing them under a microscope to identify the <i>facts beyond the facts</i>.</b></header>
+    </div>
+    <div id="projects">
+        <div class="project" onclick="window.open('StopColourTheory/StopColourTheory.html')">
+            <img class="projectBackgroundImage" src="TheFactSociety/images/stopcolourtheorybg.jpg" alt="x(">
+            <div class="projectBackground">
+            </div>
+            <div class="projectSuperHeader projectText">Reinventing Colour Fact</div>
+            <div class="projectHeader projectText">Stop Colour Theory</div>
+        </div>
+        <div class="project" onclick="window.open('SaveTheMoon.html')">
+            <img class="projectBackgroundImage" src="TheFactSociety/images/savethemoonbg.jpg" alt="x(">
+            <div class="projectBackground"></div>
+            <div class="projectSuperHeader projectText">Take Action Against Moon Obscuration</div>
+            <div class="projectHeader projectText">Save The Moon</div>
+        </div>
+        <div class="project" onclick="window.open('TheHumanWaterProject.html')">
+            <img class="projectBackgroundImage" src="TheFactSociety/images/thehumanwaterprojectbg.jpg" alt="x(">
+            <div class="projectBackground"></div>
+            <div class="projectSuperHeader projectText">Fighting Water Misinformation at a Global Level</div>
+            <div class="projectHeader projectText">The Human Water Project</div>
+        </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
