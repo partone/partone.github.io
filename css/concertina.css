@@ -1,0 +1,91 @@
+/* General */
+
+:root {
+  --top-button: #384e77;
+  --bottom-button: #18314f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+#container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
+}
+
+.button {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  padding-top: 100%;
+  height: auto;
+  background: linear-gradient(0deg, var(--top-button) 50%, var(--bottom-button) 50%);
+  border: solid black 1px;
+}
+
+/* Anglo-German Concertina */
+
+#anglo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#anglo .side{
+  width: 45%;
+}
+
+#divider {
+    width: 10%;
+}
+
+#anglo .buttonRow {
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#anglo .buttonContainer {
+  width: 16%;
+  padding: 2%;
+}
+
+#anglo .leftSide .buttonRow:nth-child(2), #anglo .rightSide .buttonRow:nth-child(2) {
+  margin-left: 6%;
+}
+
+#anglo .leftSide .buttonRow:nth-child(1), #anglo .rightSide .buttonRow:nth-child(3) {
+  margin-left: 12%;
+}
+
+#anglo .top,
+#anglo .bottom {
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#anglo .button {
+  font-size: 26px;
+  color: white;
+}
+
+#anglo .top {
+  bottom: 50%;
+}
+
+#anglo .bottom {
+  top: 50%;
+}
