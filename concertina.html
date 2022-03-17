@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concertina Thing</title>
     <link rel="stylesheet" href="css/concertina.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Josefin+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Josefin+Slab:wght@400;500&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>Concertina Space</header>
     <div id="container">
+      <div id="controls">
+        <div id="switchButton" class="control">
+          <input class="switchButtonCheckbox" type="checkbox" />
+          <label class="switchButtonLabel" for=""><span class="switchButtonLabelSpan">Wheatstone</span></label>
+        </div>
+        <div id="keySelection" class="control">
+          <div class="keyButton keySelected">C/G</div>
+          <div class="keyButton">B♭/F</div>
+          <div class="keyButton">G/D</div>
+        </div>
+      </div>
       <div id="anglo">
         <div class="leftSide side">
           <div class="buttonRow">
