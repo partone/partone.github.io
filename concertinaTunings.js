@@ -1,3 +1,5 @@
+let currentConfig = '';
+
 const CGAngloWheatstone = {
   l1: ["C", "G"],
   l2: ["G", "B"],
@@ -23,8 +25,8 @@ const CGAngloWheatstone = {
   r7: ["b", "a"],
   r8: ["d", "c"],
   r9: ["g", "e"],
-  r10: ["f", "f#"],
-  r1a: ["d#", "c#"],
+  r10: ["b", "f#"],
+  r1a: ["c#", "d#"],
   r2a: ["a", "g"],
   r3a: ["g#", "b♭"],
   r4a: ["c#", "d#"],
@@ -49,33 +51,46 @@ const CGAngloJeffries = {
   l5a: ["G#", "B♭"],
   r1: ["c", "B"],
   r2: ["e", "d"],
-  r3: ["g", "f#"],
+  r3: ["g", "f"],
   r4: ["c", "a"],
   r5: ["e", "b"],
   r6: ["g", "f#"],
   r7: ["b", "a"],
   r8: ["d", "c"],
   r9: ["g", "e"],
-  r10: ["b", "f#"],
-  r1a: ["c#", "d#"],
-  r2a: ["a", "g"],
-  r3a: ["g#", "b♭"],
-  r4a: ["c#", "d#"],
-  r5a: ["a", "f"],
+  r10: ["f", "f#"],
+  r1a: ["d#", "c#"],
+  r2a: ["c#", "d#"],
+  r3a: ["g#", "g"],
+  r4a: ["c#", "B♭"],
+  r5a: ["a", "d"],
 };
 
-for (const property in CGAngloWheatstone) {
-  $("#" + property)
-    .find(".top")
-    .text(CGAngloWheatstone[property][0].toUpperCase());
-  $("#" + property)
-    .find(".bottom")
-    .text(CGAngloWheatstone[property][1].toUpperCase());
+function switchConfiguration(config, name) {
+  currentConfig = name;
+  console.log(currentConfig);
+  for (const property in config) {
+    $("#" + property)
+      .find(".top")
+      .text(config[property][0].toUpperCase());
+    $("#" + property)
+      .find(".bottom")
+      .text(config[property][1].toUpperCase());
+  }
 }
 
 $(document).ready(function () {
+  switchConfiguration(CGAngloWheatstone, 'CGAngloWheatstone');
   $(".keyButton").on("click", function () {
     $(".keyButton").css("background-color", "rgba(255, 255, 255, 0.56)");
     $(this).css("background-color", "rgba(255, 255, 255)");
+  });
+
+  $("#switchButton").on("click", function () {
+    if(currentConfig === 'CGAngloWheatstone') {
+      switchConfiguration(CGAngloJeffries, 'CGAngloJeffries');
+    } else {
+      switchConfiguration(CGAngloWheatstone, 'CGAngloWheatstone')
+    }
   });
 });
