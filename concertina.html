@@ -14,15 +14,20 @@
     <header>Concertina Space</header>
     <div id="container">
       <div id="controls">
-        <div id="switchButton" class="control">
-          <input class="switchButtonCheckbox" type="checkbox" />
-          <label class="switchButtonLabel" for=""><span class="switchButtonLabelSpan">Wheatstone</span></label>
+        <div class="controlContainer">
+          <div id="switchButton" class="control">
+            <input class="switchButtonCheckbox" type="checkbox" />
+            <label class="switchButtonLabel" for=""><span class="switchButtonLabelSpan">Wheatstone</span></label>
+          </div>
         </div>
-        <div id="keySelection" class="control">
-          <div class="keyButton keySelected">C/G</div>
-          <div class="keyButton">B♭/F</div>
-          <div class="keyButton">G/D</div>
+        <div class="controlContainer">
+          <div id="keySelection" class="control">
+            <div class="keyButton keySelected" id="CG">C/G</div>
+            <div class="keyButton" id="BF">B♭/F</div>
+            <div class="keyButton" id="GD">G/D</div>
+          </div>
         </div>
+
       </div>
       <div id="anglo">
         <div class="leftSide side">
@@ -256,5 +261,6 @@
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="concertinaTunings.js"></script>
+  <script src="concertinaConfigs.js"></script>
+  <script src="concertinaScript.js"></script>
 </html>
