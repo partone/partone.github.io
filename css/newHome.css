@@ -199,6 +199,7 @@ canvas {
   #menu {
     position: relative;
     width: 75%;
+    bottom: 0;
   }
 
   .menuItem {
