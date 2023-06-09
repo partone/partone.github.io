@@ -1,18 +1,27 @@
 * {
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-a, a:visited, a:active, a:hover {
+a,
+a:visited,
+a:active,
+a:hover {
   color: black;
   text-decoration: none;
 }
@@ -39,12 +48,14 @@ a:hover:before {
 
 /* Canvas */
 
-body, html, canvas {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+body,
+html,
+canvas {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   background-color: #EEE;
 }
 
@@ -92,7 +103,7 @@ body, html, canvas {
 .menuItem {
   width: 25%;
   font-size: 26px;
-	text-align: center;
+  text-align: center;
 }
 
 /* Name */
@@ -123,10 +134,10 @@ body, html, canvas {
 }
 
 #PCTip {
-	position: absolute;
-	bottom: 5px;
-	left: 5px;
-	font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 14px;
 }
 
 /*Mobile*/
@@ -198,10 +209,10 @@ body, html, canvas {
     font-size: 3vw;
   }
 
-	.menuItem a {
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .menuItem a {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #mobileTip {
     display: block;
@@ -211,7 +222,7 @@ body, html, canvas {
     width: 75%;
   }
 
-	#PCTip {
-		display: none;
-	}
+  #PCTip {
+    display: none;
+  }
 }
