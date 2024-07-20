@@ -1,0 +1,51 @@
+
+body {  
+    background-color: #fff7e0;
+    background-image: url("../images/mainBG/bgGreenPaint.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    animation: softBlur 7s infinite;
+    margin: 0;
+}
+
+#container {
+    padding: 50px;
+}
+
+#nameContainer {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+* {
+    color: #FCED23;
+    font-family: 'Jost', sans-serif;
+}
+
+@keyframes softBlur {
+    0% { backdrop-filter: blur(0px);}
+    50% { backdrop-filter: blur(10px);}
+    100% { backdrop-filter: blur(0px);}
+}
+
+@media screen and (max-width:1080px) {
+
+}
+
+@media screen and (max-width:720px) {
+
+}
+    
+

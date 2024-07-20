@@ -59,6 +59,10 @@ canvas {
   background-color: #fff7e0;
 }
 
+canvas {
+    filter: blur(0.5px)
+}
+
 /* Everything else */
 
 #mainContainer {
@@ -88,6 +92,7 @@ canvas {
 
 .menuContainer {
   position: relative;
+  border-bottom: black 5px solid;
 }
 
 #menu {
@@ -109,15 +114,15 @@ canvas {
 /* Name */
 
 .nameContainer {
-  height: 33vh;
   pointer-events: none;
 }
 
 #name {
-  border-top: black 5px solid;
   text-align: justify;
-  font-size: 13vw;
+  width: 80%;
   display: table-cell;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Description */
@@ -127,7 +132,6 @@ canvas {
 }
 
 #description {
-  margin-left: 1%;
   font-weight: 500;
   width: 75%;
   font-size: 3vw;
