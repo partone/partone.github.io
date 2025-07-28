@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Bathroom</title>
+    <link rel="stylesheet" href="css/bathroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content" style="display: none;">
+        <p id="welcome">We're so glad to have you here!</p>
+
+        <img id="kasia-and-eric" src="images/kasia-and-eric.webp" alt=":)">
+        
+        <!-- Content for 18+ users -->
+        <div id="adult-content" style="display: none;">
+            <p>Whether you're here to pee, poop, wash your hands, or just to have a quick wank, we hope it's pleasant!</p>
+        </div>
+        
+        <!-- Content for under 18 users -->
+        <div id="minor-content" style="display: none;">
+            <p>Whether you're here to pee, poop, or just to wash your hands, we hope it's pleasant!</p>
+        </div>
+        
+        <p><br>- Kasia and Eric</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const isAdult = confirm("Are you 18 years or older?");
+            const contentDiv = document.getElementById('content');
+            const adultContent = document.getElementById('adult-content');
+            const minorContent = document.getElementById('minor-content');
+            
+            if (isAdult) {
+                adultContent.style.display = 'block';
+            } else {
+                minorContent.style.display = 'block';
+            }
+            
+            contentDiv.style.display = 'block';
+        };
+    </script>
+</body>
+</html>
