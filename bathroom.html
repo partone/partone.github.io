@@ -28,8 +28,53 @@
             <p>Whether you're here to pee, poop, or just to wash your hands, we hope it's pleasant!</p>
         </div>
 
-        <p><br>- Kasia and Eric<br></p><br><br>
-        <a href="http://s01.flagcounter.com/more/KX0"><img src="https://s01.flagcounter.com/count2/KX0/bg_FFFFFF/txt_000000/border_CCCCCC/columns_1/maxflags_3/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+        <p><br>- Kasia and Eric<br></p><br>
+        <div class="visitor-counter">
+            <p>Visitors:&nbsp</p><span id="counter">483</span>
+        </div>
+        <div class="ad-space">
+            <a href="https://healingmagnetscrystals.com/product/life-money-improvement-oil/" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="images/magnets.png"
+                    alt="Advertisement"
+                    class="ad-image"
+                >
+            <div class="ad-content">
+                <p>
+                    Traditional protection oil for external use with low shipping fees.
+                </p>
+            </div>
+            </a>
+        </div>
+        <div class="ad-space">
+            <a href="https://allchronology.com/2024/06/22/the-unexpected-miracle-a-horses-astonishing-birth-story-unfolds-in-a-small-town/" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="images/horse.jpg"
+                    alt="Advertisement"
+                    class="ad-image"
+                >
+            <div class="ad-content">
+                <p>
+                    Horse Refuses To Give Birth—When The Vet Sees The Ultrasound He Calls The Police.
+                </p>
+            </div>
+            </a>
+        </div>
+        <div class="ad-space">
+            <a href="norton-antivirus.exe" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="images/virus.jpg"
+                    alt="Advertisement"
+                    class="ad-image"
+                >
+            <div class="ad-content">
+                <p>
+                    URGENT: Click here to download the obligatory security update for your phone.
+                </p>
+            </div>
+            </a>
+        </div>
+        <br>
     </div>
 
     <script>
@@ -47,6 +92,18 @@
 
             contentDiv.style.display = 'block';
         };
+        
+        const STORAGE_KEY = "visitorCounter";
+        let count = localStorage.getItem(STORAGE_KEY);
+
+        if (count === null) {
+            count = 483;
+        } else {
+            count = parseInt(count, 10) + 1;
+        }
+
+        localStorage.setItem(STORAGE_KEY, count);
+        document.getElementById("counter").textContent = count;
     </script>
 </body>
 
