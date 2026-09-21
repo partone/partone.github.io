@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ebe4f7">
+    <title>Kasia & Eric Friendship Quiz</title>
+    <link rel="stylesheet" href="css/friendship-quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="quiz-app">
+        <div id="intro-screen" class="screen">
+            <div class="intro-card">
+                <h1>Kasia & Eric Friendship Quiz</h1>
+                <p class="subtitle">Find out how compatible you are!</p>
+                <button type="button" id="start-btn" class="quiz-btn quiz-btn--primary">START</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen question-screen is-hidden">
+            <div class="quiz-header">
+                <div class="progress-track" aria-hidden="true">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question-panel">
+                    <h2 id="question-text" class="question-text"></h2>
+                </div>
+                <div id="answer-area" class="answer-area"></div>
+            </div>
+            <div class="nav-row">
+                <button type="button" id="next-btn" class="quiz-btn quiz-btn--primary" disabled>Next</button>
+            </div>
+        </div>
+
+        <div id="loading-screen" class="screen is-hidden" role="status" aria-label="Loading">
+            <div class="loading-card">
+                <div class="loading-spinner" aria-hidden="true"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen is-hidden">
+            <div class="result-card">
+                <div class="result-body">
+                    <p>
+                        Hi!<br><br>
+                        Thank you for your interest in becoming <em>our friend</em>, and for taking the time to submit your application.<br><br>
+                        After careful consideration, we’re sorry to let you know that <span class="result-rejection">we will not be progressing your application on this occasion.</span><br><br>
+                        We received a strong number of applications and have decided to move forward with candidates whose experience more closely matches the current requirements of the role.<br><br>
+                        Thank you again for your time and interest, and we wish you all the best in your job search.
+                    </p>
+                    <p class="result-signoff">Warm regards,<br>Kasia and Eric</p>
+                </div>
+                <button type="button" id="exit-btn" class="quiz-btn quiz-btn--secondary">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/friendship-quiz.js"></script>
+</body>
+
+</html>
