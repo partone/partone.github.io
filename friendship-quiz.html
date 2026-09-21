@@ -36,28 +36,25 @@
             </div>
             <div class="nav-row">
                 <button type="button" id="next-btn" class="quiz-btn quiz-btn--primary" disabled>Next</button>
+                <button type="button" id="liar-btn-quiz" class="quiz-btn quiz-btn--liar is-hidden">I am a liar and don't speak Korean</button>
             </div>
         </div>
 
-        <div id="loading-screen" class="screen is-hidden" role="status" aria-label="Loading">
+        <div id="loading-screen" class="screen is-hidden" role="status" aria-live="polite">
             <div class="loading-card">
+                <div class="loading-messages">
+                    <p id="loading-message-primary" class="loading-message"></p>
+                    <p id="loading-message-secondary" class="loading-message-sub"></p>
+                </div>
                 <div class="loading-spinner" aria-hidden="true"></div>
             </div>
         </div>
 
         <div id="result-screen" class="screen is-hidden">
             <div class="result-card">
-                <div class="result-body">
-                    <p>
-                        Hi!<br><br>
-                        Thank you for your interest in becoming <em>our friend</em>, and for taking the time to submit your application.<br><br>
-                        After careful consideration, we’re sorry to let you know that <span class="result-rejection">we will not be progressing your application on this occasion.</span><br><br>
-                        We received a strong number of applications and have decided to move forward with candidates whose experience more closely matches the current requirements of the role.<br><br>
-                        Thank you again for your time and interest, and we wish you all the best in your job search.
-                    </p>
-                    <p class="result-signoff">Warm regards,<br>Kasia and Eric</p>
-                </div>
+                <div id="result-content" class="result-body"></div>
                 <button type="button" id="exit-btn" class="quiz-btn quiz-btn--secondary">Exit</button>
+                <button type="button" id="liar-btn-result" class="quiz-btn quiz-btn--liar is-hidden">I am a liar and don't speak Korean</button>
             </div>
         </div>
     </div>
